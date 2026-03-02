@@ -2,7 +2,7 @@
 title: Occupancy Sensors
 description: Commercial occupancy sensors as typically used for lighting and HVAC control
 published: true
-date: 2026-01-11T16:57:27.291Z
+date: 2026-03-02T00:42:43.134Z
 tags: lighting control, occupancy
 editor: markdown
 dateCreated: 2026-01-11T15:17:35.879Z
