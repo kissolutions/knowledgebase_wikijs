@@ -2,7 +2,7 @@
 title: Engineering Playbook template
 description: Abstracted knowledge model template
 published: true
-date: 2026-01-11T17:58:57.041Z
+date: 2026-03-02T00:52:22.436Z
 tags: template, playbook
 editor: markdown
 dateCreated: 2026-01-11T17:58:56.121Z
