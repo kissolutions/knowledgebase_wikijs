@@ -2,7 +2,7 @@
 title: Home Page
 description: Orientation Day!
 published: true
-date: 2026-01-12T02:40:37.965Z
+date: 2026-03-02T06:30:54.445Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-12T01:51:00.628Z
@@ -37,51 +37,90 @@ This wiki is intentionally **redundant** in places. That redundancy is a feature
 
 ---
 
-## Knowledge Model Overview
+# Knowledge Model Overview
 
-At a high level, this knowledgebase is organized into four layers:
+## Layer 1 – Foundations (Ontology)
+### 1. Physical Entities
+Things that physically exist and are installed in the built environment.
 
-┌───────────────────────────────────────────┐
-│ DESIGN PLAYBOOKS │
-│ (Prescriptive, workflow-driven guidance) │
-│ │
-│ • Open Office Lighting Controls │
-│ • Enclosed Office Lighting │
-│ • Warehouse Lighting │
-│ • Industrial Control Sequences │
-└───────────────────────────────────────────┘
-▲
-│
-┌───────────────────────────────────────────┐
-│ CONTROLS & SYSTEM FUNDAMENTALS │
-│ (Architectures, intent, tradeoffs) │
-│ │
-│ • Lighting Controls Fundamentals │
-│ • Control Philosophies │
-│ • Wired vs Wireless Systems │
-│ • Energy Code Drivers │
-└───────────────────────────────────────────┘
-▲
-│
-┌───────────────────────────────────────────┐
-│ HARDWARE FUNDAMENTALS │
-│ (What components exist and constrain us) │
-│ │
-│ • Fixtures & Light Generation │
-│ • Occupancy Sensors │
-│ • Power Packs & Relays │
-│ • Wiring & Power Distribution │
-└───────────────────────────────────────────┘
-▲
-│
-┌───────────────────────────────────────────┐
-│ PHYSICAL & REGULATORY REALITY │
-│ (Codes, physics, safety, environment) │
-│ │
-│ • NEC / IBC / IECC │
-│ • Environmental Ratings │
-│ • Human Factors │
-└───────────────────────────────────────────┘
+- **Signal & Control Devices**
+  - Occupancy Sensors
+  - ALS Sensors
+  - Thermostats
+  - BAS Controllers
+  - Relays
+  - Time Switches
+  - Power Packs
+
+- **Energy Conversion & Conditioning**
+  - LED Drivers
+  - Ballasts
+  - VFDs
+  - Transformers
+  - Power Supplies
+  - UPS Systems
+
+- **Terminal & Emitting Devices**
+  - Luminaires
+  - Diffusers
+  - VAV Boxes
+  - Pumps
+  - Radiators
+  - Valves
+
+- **Electrical Power Distribution**
+  - Branch Circuits
+  - Feeders
+  - Panels
+  - Line Voltage Systems
+  - Class 1 / Class 2 Circuits
+
+- **Fluid & Thermal Distribution**
+  - Piping Systems
+  - Duct Systems
+  - Circulators
+  - Grease Interceptors
+  - Mixing Valves
+
+---
+
+### 2. Functional Constructs
+Defined system capabilities or required behaviors (not physical devices).
+
+- Automatic Receptacle Control (ARC)
+- Daylight-Responsive Control
+- Vacancy Control
+- Time-Switch Control
+- Emergency Egress Function
+- Load Shedding
+- Demand Response
+
+---
+
+### 3. Regulatory & Classification Constructs
+Code-defined abstractions and legal classifications that govern design.
+
+- Interior Space Types
+- Occupancy Classifications (IBC)
+- NEC Class 2 Circuits
+- Primary / Secondary Daylight Zones
+- Hazardous Location Classifications
+- Energy Code Control Requirements
+
+
+## Layer 2 – Concepts (Behavior & Design Reasoning)
+- Control Systems Concepts
+- Fluid Systems Concepts
+- Power Systems Concepts
+- Human Factors
+- Commissioning & Fragility
+- etc.
+
+## Layer 3 – Design Playbooks
+- Lighting Playbooks
+- HVAC Playbooks
+- Plumbing Playbooks
+- BAS Playbooks
 
 ```mermaid
 graph LR
