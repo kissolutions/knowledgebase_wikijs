@@ -2,7 +2,7 @@
 title: Lighting Hardware Fundamentals Landing Page
 description: Landing Page for lighting hardware - HowTo's on the page layouts important information
 published: true
-date: 2026-01-11T00:48:02.480Z
+date: 2026-03-02T00:53:26.982Z
 tags: template
 editor: markdown
 dateCreated: 2026-01-11T00:48:01.591Z
