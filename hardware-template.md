@@ -2,7 +2,7 @@
 title: hardware-template
 description: markdown template for Hardware pages
 published: true
-date: 2026-01-11T14:53:39.348Z
+date: 2026-03-02T00:52:48.432Z
 tags: template, hardware
 editor: markdown
 dateCreated: 2026-01-11T00:21:40.937Z
