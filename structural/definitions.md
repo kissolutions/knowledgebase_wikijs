@@ -2,7 +2,7 @@
 title: Definitions
 description: definitions of words that pertain to this knowledge model
 published: true
-date: 2026-03-02T00:54:21.953Z
+date: 2026-03-02T07:01:17.716Z
 tags: definitions
 editor: markdown
 dateCreated: 2026-03-01T16:25:25.552Z
