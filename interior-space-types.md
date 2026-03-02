@@ -2,7 +2,7 @@
 title: Interior Space Types
 description: This page describes the concept of Occupancy within regulatory documents like Building Code, ASHRAE, IECC.
 published: true
-date: 2026-01-11T20:46:57.455Z
+date: 2026-03-02T00:51:43.758Z
 tags: occupancies, building code
 editor: markdown
 dateCreated: 2026-01-11T19:02:58.312Z
