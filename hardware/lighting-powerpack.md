@@ -2,7 +2,7 @@
 title: Lighting Control Powerpack
 description: Hardware Description 
 published: true
-date: 2026-03-02T00:45:42.169Z
+date: 2026-03-02T05:48:10.430Z
 tags: lighting control, powerpack, room controls
 editor: markdown
 dateCreated: 2026-01-11T14:53:07.656Z
