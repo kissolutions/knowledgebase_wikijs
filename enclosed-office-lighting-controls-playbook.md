@@ -2,7 +2,7 @@
 title: Enclosed Office Lighting Controls Playbook
 description: 
 published: true
-date: 2026-01-11T21:33:54.791Z
+date: 2026-03-02T00:01:05.558Z
 tags: lighting controls, playbook, enclosed office, office
 editor: markdown
 dateCreated: 2026-01-11T21:24:05.224Z
