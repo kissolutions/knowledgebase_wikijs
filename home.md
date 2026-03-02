@@ -2,7 +2,7 @@
 title: Home Page
 description: Orientation Day!
 published: true
-date: 2026-03-02T06:41:01.484Z
+date: 2026-03-02T06:58:10.038Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-12T01:51:00.628Z
@@ -210,89 +210,111 @@ Think of this as a **ladder of abstraction**:
 
 ## Page Types You Will See
 
-### 1. Fundamentals Pages
+This knowledgebase contains multiple page types. Each serves a different purpose.
 
-Answer questions like:
-- *What is this thing?*
-- *How does it behave physically?*
-- *What constraints does it impose?*
-
-Examples:
-- Lighting Hardware – Fundamentals  
-- Lighting Controls – Fundamentals  
-- Occupancy Sensors  
-
-These pages are **descriptive**, not prescriptive.
+Understanding the type of page you are on is important.
 
 ---
 
-### 2. Design Playbooks
+### 1. Foundations (Ontology)
 
-Answer questions like:
-- *Where do I start?*
-- *What should I do by default?*
-- *When do I deviate or escalate?*
+Define what exists in our engineered reality.
+
+These pages answer:
+- What is this thing?
+- How is it defined?
+- What intrinsic properties and limits does it have?
+- What regulatory construct governs it?
 
 Examples:
-- Open Office Lighting Controls  
+- Occupancy Sensors  
+- Automatic Receptacle Control  
+- NEC Class 2 Circuits  
+- Interior Space Types  
+
+These pages are declarative and contain no design guidance.
+
+---
+
+### 2. Concepts (System Behavior & Design Patterns)
+
+Explain how systems behave and interact.
+
+These pages answer:
+- What forces shape solutions?
+- What tradeoffs emerge?
+- What tends to fail?
+- What patterns repeat across systems?
+
+Examples:
+- Control Zoning Principles  
+- Sensor Coverage Geometry  
+- Commissioning Fragility  
+- Pump Head Tradeoffs  
+
+These pages are analytical, not prescriptive.
+
+---
+
+### 3. Constraint Synthesis Pages
+
+Aggregate the constraints acting on a specific context before design decisions are made.
+
+These pages answer:
+- What code constraints apply?
+- What environmental conditions matter?
+- What usage assumptions exist?
+- What forces must be considered before choosing a solution?
+
+Examples:
+- Enclosed Office — Constraint Envelope  
+- Commercial Kitchen — Regulatory Constraints  
+- High-Pile Storage — Detection Constraints  
+
+These pages do not prescribe solutions. They define the envelope of reality.
+
+---
+
+### 4. Design Playbooks
+
+Encode firm standards and decision paths.
+
+These pages answer:
+- What do we do by default?
+- When do we branch?
+- What triggers escalation?
+- What documentation is required?
+
+Examples:
 - Enclosed Office Lighting Controls  
 - Warehouse Lighting Controls  
+- VAV Reheat Control Strategy  
 
-These pages are **opinionated, constraint-driven, and workflow-oriented**.
-
-They are the primary entry point for design work.
+These pages are prescriptive and workflow-oriented.
 
 ---
 
-### 3. Reference & Deep-Dive Pages
+### 5. Reference & Deep-Dive Pages
 
-Answer questions like:
-- *Why does this work this way?*
-- *What are the edge cases?*
-- *How does this fail?*
+Provide expanded technical detail without overloading core pages.
+
+These pages answer:
+- Why does this behave this way?
+- What are edge cases?
+- How does this fail?
+- What are advanced considerations?
+
+These pages are optional but valuable.
+
+---
+
+### 6. Governance & Doctrine
+
+Define how this knowledge system works.
 
 Examples:
-- Occupancy Sensor Field-of-View Geometry  
-- Daylight Zoning Principles  
-- Commissioning and Calibration  
+- Knowledge Model Structure  
+- Playbook Authoring Standards  
+- Documentation Philosophy  
 
-These pages are **escape hatches**, not prerequisites.
-
----
-
-## Design Philosophy
-
-This knowledgebase reflects a few core beliefs:
-
-- Codes define **minimums**, not good design
-- Defaults are necessary — and must be defensible
-- Simplicity is often more robust than optimization
-- Deviations should be intentional and documented
-- Engineering judgment should be **captured**, not rediscovered
-
----
-
-## Status and Stewardship
-
-This wiki is a **living system**.
-
-- Content will evolve as codes, technology, and experience change
-- Playbooks reflect **organizational judgment at a point in time**
-- Each major page has an identified steward
-
-If something feels unclear, contradictory, or out of date — that is a signal, not a failure.
-
----
-
-## Where to Start
-
-If you are:
-- **New to a system or space type** → Start with a Design Playbook  
-- **Researching components or constraints** → Start with Fundamentals  
-- **Comparing architectures or approaches** → Follow cross-links between layers  
-
-There is no single “correct” path — but there *is* a correct starting point for each task.
-
----
-
-*This is not just a wiki — it is a knowledge operating system for engineering judgment.*
+These pages govern the structure and evolution of the knowledgebase itself.
