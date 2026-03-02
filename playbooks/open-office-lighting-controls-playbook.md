@@ -2,7 +2,7 @@
 title: Open Office Lighting Controls Design Playbook
 description: This Playbook will guide the energy-code dependent, constraint-aware 
 published: true
-date: 2026-03-01T23:54:56.641Z
+date: 2026-03-02T00:57:51.975Z
 tags: lighting controls, playbook, open office
 editor: markdown
 dateCreated: 2026-01-11T18:55:09.915Z
