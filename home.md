@@ -2,7 +2,7 @@
 title: Home Page
 description: Orientation Day!
 published: true
-date: 2026-03-02T06:30:54.445Z
+date: 2026-03-02T06:33:06.608Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-12T01:51:00.628Z
@@ -40,6 +40,7 @@ This wiki is intentionally **redundant** in places. That redundancy is a feature
 # Knowledge Model Overview
 
 ## Layer 1 – Foundations (Ontology)
+Ontology defines what exists in our engineered reality: physical entities, required functional constructs, and regulatory classifications. This layer contains no design guidance.
 ### 1. Physical Entities
 Things that physically exist and are installed in the built environment.
 
