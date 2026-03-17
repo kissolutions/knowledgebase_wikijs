@@ -126,6 +126,7 @@ Energy codes typically require:
 - Automatic shutoff when a space is unoccupied
 - Occupant override capability
 - Maximum override duration limits
+- Similar to lighting occupancy sensor requirements
 
 ---
 
@@ -136,6 +137,7 @@ ARC is commonly required in:
 - Enclosed offices
 - Open office workstations
 - Conference rooms
+- Printer rooms
 - Break rooms
 - Classrooms
 
@@ -159,34 +161,36 @@ This method integrates ARC with the **lighting occupancy sensing system**.
 graph LR
 
 subgraph PWR["Power Distribution"]
-    LV["Line Voltage Feed"]
-    ARC["ARC Control"]
+    LV["BRANCH CIRCUIT"]
+    JB["Jbox"]
     RP["Relay Powerpack<br>(Switched Leg)"]
     UH["Unswitched Hot"]
 end
 
 subgraph CTRL["Control Signaling"]
     OCC["Occupancy Sensor<br>+ Override"]
-    LP["Lighting Powerpack"]
 end
-
+subgraph LTG["Lighting System"]
+ LP["Lighting Powerpack"]
+end
 subgraph LOADS["Loads"]
+
     SR1["Switched Receptacle"]
     SR2["Switched Receptacle"]
-    UR1["Unswitched Receptacle"]
-    UR2["Unswitched Receptacle"]
+    UR1["Other Unswitched Receptacles"]
 end
 
-LV --> ARC
-ARC --> RP
-ARC --> UH
+
+LV --> JB
+JB --> RP
+JB --> UH
 
 RP --> SR1 --> SR2
-UH --> UR1 --> UR2
+SR1 -.-> SR2
+UH --> UR1
 UH --> SR1
-
-RP -.-> OCC
 OCC -.-> LP
+RP -.-> OCC
 
 classDef control fill:#dddddd,stroke:#666666,color:#000000;
 class OCC,LP control;
@@ -238,7 +242,41 @@ This approach minimizes additional hardware and ensures consistent behavior betw
 ---
 
 ## 3.2 Standalone Occupancy Sensor + Power Pack
+```mermaid
+graph LR
 
+subgraph PWR["Power Distribution"]
+    LV["BRANCH CIRCUIT"]
+    JB["Jbox"]
+    RP["Relay Powerpack<br>(Switched Leg)"]
+    UH["Unswitched Hot"]
+end
+
+subgraph CTRL["Control Signaling"]
+    OCC["Occupancy Sensor<br>+ Override"]
+end
+
+subgraph LOADS["Loads"]
+    SR1["Switched Receptacle"]
+    SR2["Switched Receptacle"]
+    UR1["Other Unswitched Receptacles"]
+end
+
+RP -.-> OCC
+LV --> JB
+JB --> RP
+JB --> UH
+RP --> SR1 --> SR2
+SR1 -.-> SR2
+UH --> SR1
+UH --> UR1
+
+classDef control fill:#dddddd,stroke:#666666,color:#000000;
+class OCC control;
+
+linkStyle 6 stroke-dasharray: 5 5
+linkStyle 7 stroke-dasharray: 5 5
+```
 ARC is implemented using a **dedicated occupancy sensor controlling receptacle circuits**.
 
 Typical components:
