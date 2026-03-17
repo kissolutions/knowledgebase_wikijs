@@ -154,6 +154,40 @@ These approaches differ in cost, reliability, wiring complexity, and integration
 ## 3.1 Lighting Controls Integrated Method (Typical KIS Implementation)
 
 This method integrates ARC with the **lighting occupancy sensing system**.
+```
+```mermaid
+graph LR
+
+LV["Line Voltage Feed"]
+
+ARC["ARC Control"]
+
+RP["Relay Powerpack<br>(Controlled Receptacles)"]
+
+R1["Controlled Receptacle"]
+R2["Controlled Receptacle"]
+
+UH["Unswitched Hot"]
+
+UR1["Uncontrolled Receptacle"]
+UR2["Uncontrolled Receptacle"]
+
+OCC["Occupancy Sensor<br>+ Override"]
+
+LP["Lighting Powerpack"]
+
+LV --> ARC
+
+ARC --> RP
+ARC --> UH
+
+RP --> R1 --> R2
+
+UH --> UR1 --> UR2
+
+RP --> OCC
+OCC --> LP
+```
 
 ### Overview
 
