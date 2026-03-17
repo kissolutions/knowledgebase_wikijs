@@ -1,0 +1,318 @@
+---
+title: IECC Automatic Receptacle Control Requirements
+description: Regulatory requirements for Automatic Receptacle Control (ARC) derived from the International Energy Conservation Code (IECC).
+published: true
+tags: regulatory, energy-code, iecc
+editor: markdown
+---
+
+# IECC Automatic Receptacle Control Requirements
+
+---
+
+# 0. Purpose and Scope
+
+This page documents **regulatory requirements governing Automatic Receptacle Control (ARC)** as defined by the International Energy Conservation Code (IECC).
+
+ARC requirements are intended to reduce plug-load energy consumption by ensuring that receptacles serving general equipment loads are automatically de-energized when the associated space is not actively in use.
+
+This page focuses on **what the IECC requires**, not how systems should be designed.
+
+Design approaches and implementation strategies are documented in:
+
+- [[Automatic Receptacle Control]]
+- [[ARC Design Playbook]]
+
+---
+
+# 1. Regulatory Definition
+
+## Automatic Receptacle Control (ARC)
+
+Automatic Receptacle Control refers to **the automatic control of receptacle outlets serving plug loads** such that power is removed from those outlets when certain conditions are met.
+
+These conditions typically include:
+
+- vacancy of the space
+- time-of-day schedules
+- signals from control systems
+
+ARC requirements generally apply to **receptacles serving general plug loads**, not dedicated equipment.
+
+---
+
+# 2. Governing Codes and Standards
+
+The following standards commonly define ARC requirements:
+
+- **IECC (International Energy Conservation Code)**
+- **ASHRAE 90.1**
+
+This page focuses specifically on **IECC requirements**.
+
+Local jurisdictions may modify or amend these requirements.
+
+---
+
+# 3. Requirements
+
+---
+
+## 3.1 IECC 2021
+
+### Relevant Code Sections
+
+- IECC 2021 – Section **C405.10** (Automatic Receptacle Control)
+
+---
+
+### Core Requirements
+
+Buildings must include automatic receptacle control for **plug-load receptacles** in certain spaces.
+
+Typical requirements include:
+
+- At least **50% of 125V 15A and 20A receptacles** in applicable spaces must be automatically controlled.
+- Controlled receptacles must automatically turn off under defined conditions.
+- Controlled receptacles must be **visually identified**.
+- Controlled receptacles must restore power upon occupancy or manual override.
+
+---
+
+### Space-Type Trigger Matrix (Typical Applications)
+
+| Space Type | ARC Required | Notes |
+|-------------|-------------|------|
+| Enclosed Offices | Yes | Typically tied to occupancy sensor control |
+| Open Offices | Yes | Often integrated with lighting control zones |
+| Conference Rooms | Yes | Usually occupancy sensor or schedule-based |
+| Classrooms | Yes | May integrate with lighting control system |
+| Break Rooms | Yes | Controlled receptacles often provided at counters |
+| Copy / Print Rooms | Yes | Equipment exceptions often apply |
+| Corridors | No | Plug loads typically not considered general-purpose |
+| Restrooms | No | Receptacles typically dedicated loads |
+| Mechanical Rooms | No | Equipment loads exempt |
+| Server / IT Rooms | No | Continuous power required |
+
+---
+
+### Exceptions
+
+Receptacles that are **not required to be automatically controlled** typically include:
+
+- Receptacles serving **refrigerators**
+- Receptacles serving **vending machines**
+- Receptacles serving **information technology equipment**
+- Receptacles serving **life safety systems**
+- Receptacles serving **equipment requiring continuous power**
+
+---
+
+### Conditions That Trigger the Requirement
+
+ARC requirements typically apply when:
+
+- Spaces contain **general-purpose receptacles**
+- Spaces are **regularly occupied**
+- Equipment loads are not dedicated or exempt
+
+---
+
+### Allowable Compliance Methods
+
+IECC permits several approaches to ARC implementation:
+
+- Occupancy sensor control
+- Time-switch control
+- Building automation system scheduling
+- Manual override with automatic reset
+
+---
+
+## 3.2 IECC 2024
+
+### Relevant Code Sections
+
+- IECC 2024 – Section **C405.10** (Automatic Receptacle Control)
+
+---
+
+### Core Requirements
+
+IECC 2024 maintains the requirement that **a portion of general-purpose receptacles must be automatically controlled**.
+
+Key elements include:
+
+- At least **50% of applicable receptacles must be automatically controlled**
+- Controlled receptacles must automatically shut off when spaces are unoccupied
+- Controlled receptacles must be **visually identified**
+- Occupant override must be available
+
+---
+
+### Space-Type Trigger Matrix (Typical Applications)
+
+| Space Type | ARC Required | Notes |
+|-------------|-------------|------|
+| Enclosed Offices | Yes | Frequently implemented using lighting occupancy sensors |
+| Open Offices | Yes | Often integrated with lighting control zones |
+| Conference Rooms | Yes | Typically occupancy-controlled |
+| Classrooms | Yes | May integrate with BAS or lighting systems |
+| Break Rooms | Yes | Counter receptacles often partially controlled |
+| Copy / Print Rooms | Yes | Dedicated equipment exceptions common |
+| Corridors | No | Receptacles typically not general plug loads |
+| Restrooms | No | Receptacles generally dedicated loads |
+| Mechanical Rooms | No | Equipment loads exempt |
+| Server / IT Rooms | No | Continuous power required |
+
+---
+
+### Exceptions
+
+Common exceptions include receptacles serving:
+
+- refrigeration equipment
+- information technology equipment
+- life safety systems
+- equipment with built-in energy management
+- equipment requiring continuous power
+
+---
+
+### Conditions That Trigger the Requirement
+
+ARC typically applies when:
+
+- receptacles serve **general plug loads**
+- spaces are **regularly occupied**
+- receptacles are not dedicated equipment circuits
+
+---
+
+### Allowable Compliance Methods
+
+ARC may be implemented using:
+
+- occupancy sensor control
+- time-switch control
+- BAS scheduling
+- manual override with automatic reset
+
+---
+
+# 4. Interactions with Other Codes
+
+ARC implementation may interact with other codes including:
+
+**NEC**
+
+- branch circuit wiring
+- split receptacle wiring
+- switching of receptacle circuits
+
+**IBC**
+
+- occupancy classifications affecting space use
+
+**Local Amendments**
+
+- some jurisdictions modify ARC requirements or enforcement practices.
+
+## 4.1 NEC — Switched Receptacles
+
+Automatic Receptacle Control systems often require receptacle circuits to be switched.
+
+This introduces interactions with the **National Electrical Code (NEC)** governing receptacle wiring configurations.
+
+---
+
+### Typical Wiring Configuration
+
+A common ARC implementation uses **split-wired receptacles**, where:
+
+- One half of the receptacle is **always energized**
+- One half is **automatically controlled**
+
+This allows equipment requiring continuous power to remain energized while still complying with ARC requirements.
+
+---
+
+### Typical Implementation Methods
+
+Common methods used in ARC implementations include:
+
+- Split receptacles with a switched conductor
+- Relay-controlled branch circuits
+- Controlled receptacle circuits using lighting control relays
+- Occupancy sensor–controlled branch circuits
+
+---
+
+### NEC Considerations
+
+Relevant NEC considerations may include:
+
+- Identification of controlled receptacles
+- Branch circuit wiring methods
+- Switching of grounded conductors (generally prohibited)
+- Conductor identification and multiwire branch circuit considerations
+
+Exact NEC sections vary by code edition and wiring method.
+
+---
+
+### Practical Implications
+
+When ARC is implemented using switched receptacles:
+
+- Electrical drawings must clearly identify **controlled receptacles**
+- Contractors must correctly break the tab on split receptacles when required
+- Controlled circuits must remain compliant with NEC switching rules
+
+---
+
+# 5. Common Interpretation Issues
+
+### Controlled receptacle identification
+
+Controlled receptacles must typically be **visually marked** to inform occupants that the outlet may turn off automatically.
+
+---
+
+### Continuous-load equipment
+
+Equipment that must remain energized should not be connected to controlled receptacles.
+
+Examples include:
+
+- servers
+- medical devices
+- refrigeration equipment
+
+---
+
+### Partial control requirement
+
+Energy codes typically require **only a portion of receptacles to be controlled**, not all receptacles.
+
+Designers must ensure that:
+
+- controlled outlets are clearly identified
+- uncontrolled outlets remain available for continuous loads
+
+---
+
+# 6. Related Concepts
+
+- [[Automatic Receptacle Control]]
+- [[Interior Space Types]]
+- [[Occupancy Sensors]]
+- [[Enclosed Office Lighting Controls Playbook]]
+
+---
+
+# 7. Status and Stewardship
+
+Status: Draft  
+Last Reviewed: 2026-03  
+Steward: Electrical Engineering Discipline
