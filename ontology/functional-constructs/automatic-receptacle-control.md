@@ -291,7 +291,37 @@ This method separates ARC from lighting control systems.
 ## 3.3 Line Voltage Occupancy Sensor Switching Receptacle Circuit
 
 Some occupancy sensors are rated to switch full branch circuits.
+```mermaid
+graph LR
 
+subgraph PWR["Power Distribution"]
+    LV["BRANCH CIRCUIT"]
+    JB["Jbox"]
+    SW["Combo Occ/Switch"]
+    UH["Unswitched Hot"]
+end
+
+subgraph LOADS["Loads"]
+    SR1["Switched Receptacle"]
+    SR2["Switched Receptacle"]
+    UR1["Other Unswitched Receptacles"]
+end
+
+LV --> JB
+JB --> SW
+JB --> UH
+
+SW --> SR1 --> SR2
+SR1 -.-> SR2
+UH --> UR1
+UH --> SR1
+
+classDef control fill:#dddddd,stroke:#666666,color:#000000;
+class OCC,LP control;
+
+linkStyle 6 stroke-dasharray: 5 5
+linkStyle 7 stroke-dasharray: 5 5
+```
 Example implementation:
 
 - Wall-mounted line-voltage occupancy sensor
@@ -312,7 +342,42 @@ Limitations:
 ## 3.4 Time-Switch Controlled Receptacles
 
 ARC can also be implemented using **time scheduling**.
+```mermaid
+graph LR
 
+subgraph PWR["Power Distribution"]
+    LV["BRANCH CIRCUIT"]
+    JB["Jbox"]
+    RP["Powerpack / Relay Controller"]
+    UH["Unswitched Hot"]
+end
+
+subgraph CTRL["Control Signaling"]
+    TS["Time Switch<br>+ Local Override"]
+end
+subgraph LOADS["Loads"]
+
+    SR1["Switched Receptacle"]
+    SR2["Switched Receptacle"]
+    UR1["Other Unswitched Receptacles"]
+end
+
+LV --> JB
+TS-.-> RP
+JB --> RP
+JB --> UH
+RP --> SR1 --> SR2
+SR1 -.-> SR2
+UH --> UR1
+UH --> SR1
+
+
+classDef control fill:#dddddd,stroke:#666666,color:#000000;
+class OCC,LP control;
+
+linkStyle 6 stroke-dasharray: 5 5
+linkStyle 7 stroke-dasharray: 5 5
+```
 Typical components:
 
 - Digital time switch
