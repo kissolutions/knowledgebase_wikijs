@@ -162,15 +162,15 @@ LV["Line Voltage Feed"]
 
 ARC["ARC Control"]
 
-RP["Relay Powerpack<br>(Controlled Receptacles)"]
+RP["Relay Powerpack<br>(Switched Leg)"]
 
-R1["Controlled Receptacle"]
-R2["Controlled Receptacle"]
+SR1["Switched Receptacle"]
+SR2["Switched Receptacle"]
 
 UH["Unswitched Hot"]
 
-UR1["Uncontrolled Receptacle"]
-UR2["Uncontrolled Receptacle"]
+UR1["Unswitched Receptacle"]
+UR2["Unswitched Receptacle"]
 
 OCC["Occupancy Sensor<br>+ Override"]
 
@@ -181,10 +181,14 @@ LV --> ARC
 ARC --> RP
 ARC --> UH
 
-RP --> R1 --> R2
+RP --> SR1 --> SR2
 
 UH --> UR1 --> UR2
 
+%% Unswitched hot bypass to switched receptacles
+UH --> SR1
+
+%% Control relationship
 RP --> OCC
 OCC --> LP
 ```
