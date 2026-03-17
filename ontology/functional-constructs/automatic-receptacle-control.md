@@ -183,10 +183,11 @@ end
 
 LV --> JB
 JB --> RP
-JB --> UH
+
 
 RP --> SR1 --> SR2
 SR1 -.-> SR2
+JB --> UH
 UH --> UR1
 UH --> SR1
 OCC -.-> LP
