@@ -164,6 +164,9 @@ ARC["ARC Control"]
 
 RP["Relay Powerpack<br>(Switched Leg)"]
 
+OCC["Occupancy Sensor<br>+ Override"]
+LP["Lighting Powerpack"]
+
 SR1["Switched Receptacle"]
 SR2["Switched Receptacle"]
 
@@ -172,25 +175,31 @@ UH["Unswitched Hot"]
 UR1["Unswitched Receptacle"]
 UR2["Unswitched Receptacle"]
 
-OCC["Occupancy Sensor<br>+ Override"]
-
-LP["Lighting Powerpack"]
-
 LV --> ARC
 
 ARC --> RP
 ARC --> UH
 
+%% Control path (placed earlier to render higher)
+RP -.-> OCC
+OCC -.-> LP
+
+%% Switched receptacles
 RP --> SR1 --> SR2
 
+%% Unswitched receptacles
 UH --> UR1 --> UR2
 
-%% Unswitched hot bypass to switched receptacles
+%% Unswitched bypass feeding switched receptacle circuit
 UH --> SR1
 
-%% Control relationship
-RP --> OCC
-OCC --> LP
+%% Styling for control domain
+classDef control fill:#dddddd,stroke:#666666,color:#000000;
+class OCC,LP control;
+
+%% Force dashed control links
+linkStyle 3 stroke-dasharray: 5 5
+linkStyle 4 stroke-dasharray: 5 5
 ```
 
 ### Overview
