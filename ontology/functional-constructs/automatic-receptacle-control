@@ -154,7 +154,7 @@ These approaches differ in cost, reliability, wiring complexity, and integration
 ## 3.1 Lighting Controls Integrated Method (Typical KIS Implementation)
 
 This method integrates ARC with the **lighting occupancy sensing system**.
-```
+
 ```mermaid
 graph LR
 
