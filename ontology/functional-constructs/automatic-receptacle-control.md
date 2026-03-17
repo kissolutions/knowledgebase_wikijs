@@ -201,7 +201,45 @@ class OCC,LP control;
 linkStyle 3 stroke-dasharray: 5 5
 linkStyle 4 stroke-dasharray: 5 5
 ```
+```mermaid
+graph LR
 
+subgraph PWR["Power Distribution"]
+    LV["Line Voltage Feed"]
+    ARC["ARC Control"]
+    RP["Relay Powerpack<br>(Switched Leg)"]
+    UH["Unswitched Hot"]
+end
+
+subgraph CTRL["Control Signaling"]
+    OCC["Occupancy Sensor<br>+ Override"]
+    LP["Lighting Powerpack"]
+end
+
+subgraph LOADS["Loads"]
+    SR1["Switched Receptacle"]
+    SR2["Switched Receptacle"]
+    UR1["Unswitched Receptacle"]
+    UR2["Unswitched Receptacle"]
+end
+
+LV --> ARC
+ARC --> RP
+ARC --> UH
+
+RP --> SR1 --> SR2
+UH --> UR1 --> UR2
+UH --> SR1
+
+RP -.-> OCC
+OCC -.-> LP
+
+classDef control fill:#dddddd,stroke:#666666,color:#000000;
+class OCC,LP control;
+
+linkStyle 6 stroke-dasharray: 5 5
+linkStyle 7 stroke-dasharray: 5 5
+```
 ### Overview
 
 The same occupancy sensor that controls lighting also triggers ARC through a relay device.
