@@ -1,0 +1,1 @@
+Vendor-neutral instructions explaining how an AI agent should USE the engineering knowledgebase
