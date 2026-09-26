@@ -75,6 +75,23 @@ Complexity here reflects real engineering complexity.
 
 ---
 
+### 5. Templates and Extensions
+Every page type has a template in `/templates`:
+
+- Physical entity → hardware template
+- Functional construct → functional-construct template
+- Regulatory / classification → reg-and-class template
+- Concept → concept template
+- Constraint synthesis → constraint-synthesis template
+- Playbook → playbook template
+- Product type / class → product-class template
+- Reference / deep-dive → reference template
+- Design → design-page template
+
+Repositories that adopt this framework for a narrower purpose may add their own page types. The rules for doing so are in [Framework Extension Doctrine](/governance-and-doctrine/framework-extension-doctrine).
+
+---
+
 ## Why This Map Also Helps AI Agents
 
 This map is designed to be readable by humans **and** consumable by AI agents.
