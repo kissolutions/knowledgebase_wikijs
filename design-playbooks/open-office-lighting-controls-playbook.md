@@ -10,6 +10,9 @@ dateCreated: 2026-01-11T18:55:09.915Z
 
 # Open Office Lighting Controls — Design Playbook
 
+
+Use the [lighting guidance index](lighting-controls-guidance-index.md) for required review inputs and source/edition verification. This existing playbook is draft guidance: distinguish KIS preferences from code requirements and verify numerical rules against the selected edition/amendments. When checking an existing MEP design, retain its intent and record findings; adopt a preferred alternative only with authority and approval.
+
 <!--
 DESIGN PLAYBOOK
 Domain: Lighting Controls
@@ -78,7 +81,7 @@ Higher performance or customization requires exiting this playbook.
 ANCHOR: SYSTEM DEFINITION
 -->
 > For a detailed discussion of office space classifications, uses, and code context, see:
-> **[Interior Space Types → Open Office](../interior-space-types#open-office)**
+> **[Interior Space Types → Open Office](../ontology/reg-and-class/interior-space-types.md#open-office)**
 
 For lighting control purposes, an **open office** is understood as a space that:
 - Serves multiple workstations within a shared, contiguous area
@@ -375,3 +378,4 @@ ANCHOR: INSTITUTIONAL CONTEXT
 -->
 
 Open office lighting controls are frequently subject to value engineering and minimal stakeholder input. This playbook reflects a bias toward designs that survive those conditions while remaining compliant, predictable, and defensible.
+

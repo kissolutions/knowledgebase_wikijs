@@ -10,6 +10,9 @@ dateCreated: 2026-01-11T21:24:05.224Z
 
 # Enclosed Office Lighting Controls — Design Playbook
 
+
+Use the [lighting guidance index](lighting-controls-guidance-index.md) for required review inputs and source/edition verification. This existing playbook is draft guidance: distinguish KIS preferences from code requirements and verify numerical rules against the selected edition/amendments. When checking an existing MEP design, retain its intent and record findings; adopt a preferred alternative only with authority and approval.
+
 <!--
 DESIGN PLAYBOOK
 Domain: Lighting Controls
@@ -62,7 +65,7 @@ Higher performance requirements = exit playbook and write a project-specific con
 An **enclosed office** is a fully enclosed, room-based office space intended for one (or a few) occupants, typically with a door and full-height walls.
 
 > For deeper classification context and edge cases, see:
-> **[Interior Space Types → Enclosed Office](../interior-space-types#enclosed-office)**
+> **[Interior Space Types → Enclosed Office](../ontology/reg-and-class/interior-space-types.md#enclosed-office)**
 
 ---
 
@@ -143,7 +146,7 @@ California’s Title 24 (Part 6) has its own structure and terminology, but simi
 
 Under IECC editions that include Automatic Receptacle Control (notably IECC 2021 and later), **enclosed offices are required to automatically control a portion of receptacle outlets**.
 > For background and detailed requirements, see:
-> **[Controls Fundamentals → Automatic Receptacle Control](../controls-fundamentals/automatic-receptacle-control)**
+> **[Controls Fundamentals → Automatic Receptacle Control](../ontology/functional-constructs/automatic-receptacle-control.md)**
 
 Although Automatic Receptacle Control is **not a lighting control requirement**, it is **functionally coupled to lighting controls** once it becomes applicable. At KIS, ARC is typically implemented using the time switches and occupancy sensors that are part of the same manufacturer family as the lighting controls, to ensure consistent behavior and reliable commissioning.”
 
@@ -414,3 +417,4 @@ Exit this playbook when:
 <!-- ANCHOR: INSTITUTIONAL CONTEXT -->
 
 Enclosed offices are a high-volume space type where controls are often value engineered. The playbook defaults bias toward compliance and predictable occupant behavior with minimal devices, while providing a clear path to power packs and unified ecosystems when receptacle control or integration scope forces it.
+

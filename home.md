@@ -318,3 +318,9 @@ Examples:
 - Documentation Philosophy  
 
 These pages govern the structure and evolution of the knowledgebase itself.
+
+
+
+## Lighting Review Entry Point
+
+Use the [Lighting Controls Guidance Index](design-playbooks/lighting-controls-guidance-index.md) to find space definitions, existing playbooks, required review inputs and guidance gaps. It separates vocabulary, selected code requirements, KIS defaults and project-specific source intent.

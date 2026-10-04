@@ -594,3 +594,9 @@ Related topics:
 
 Status: Draft  
 Steward: Electrical Engineering Discipline
+
+
+
+## Lighting Guidance Navigation
+
+For related lighting-control review, see the [lighting guidance index](../../design-playbooks/lighting-controls-guidance-index.md) and the existing [Enclosed Office Lighting Controls Playbook](../../design-playbooks/enclosed-office-lighting-controls-playbook.md). Lighting and receptacle functions remain distinct even when they share occupancy sensing; verify each against the selected code basis.

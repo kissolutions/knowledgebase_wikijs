@@ -20,7 +20,7 @@ The intent of this page is to:
 - Provide context *before* design decisions are made
 - Support downstream Design Playbooks without duplicating prescriptive guidance
 
-This page describes **what spaces are**, not **how to design them**.
+This page describes **what spaces are**, not **how to design them**. Preserve source room names, Building Code Space Type, Building Code Occupancy Group and Energy Code Space Type separately; none automatically supplies the others. New circulation/room/daylight vocabulary below is draft KIS framework terminology informed by owner workflow decisions, with regulatory applicability still requiring a selected edition and source verification.
 
 ---
 
@@ -118,26 +118,11 @@ This implicit definition is derived from how codes treat small office spaces dif
 
 ### Relationship to Energy Codes (Lighting Controls)
 
-Energy codes such as the IECC do not explicitly define an “enclosed office.”
+Keep the office definition separate from edition-specific control thresholds. Room area, enclosure, actual use, glazing and connected lighting are inputs to the selected code review; a vocabulary label alone does not establish an exemption or required control sequence.
 
-However, they commonly establish **size-based thresholds** that distinguish between:
-- Small, enclosed office rooms, and
-- Larger office areas requiring shared control strategies
+This catalog does not use a universal 250 SF cutoff to define an enclosed office. Determine applicable triggers, exceptions and required behavior from the project's selected standard, edition, jurisdiction and amendments with exact source references. An enclosed office can be larger than a particular control threshold while remaining architecturally enclosed.
 
-In practice, an enclosed office is typically:
-- **Less than 250 square feet**, and
-- **Fully enclosed**, and
-- Served by lighting intended for a specific room
-
-When these conditions are met, energy codes often allow:
-- Room-based occupancy sensing
-- Simpler control zoning
-- Exemption from some daylight-responsive control requirements
-
-These allowances are based on the assumption that:
-- Occupancy is limited
-- Use is predictable
-- Control behavior can be localized to a single room
+Use the [lighting guidance index](../../design-playbooks/lighting-controls-guidance-index.md) to locate the relevant playbook and its review limitations.
 
 ---
 
@@ -212,41 +197,16 @@ This implicit definition supports consistent interpretation across projects and 
 ---
 
 ## Open Office
-### Definition 
-(Implicit and Code-Derived)
-An **open office** is not explicitly defined as a named space type in most building or energy codes.
 
-Instead, it is an **implicitly defined condition** that emerges from how codes classify *office use*, *occupancy*, and *control thresholds*.
+### Definition
 
-For practical design purposes, an open office is understood as:
+For KIS shared vocabulary, an **open office** is an office work area with shared workstations or desks that are not individually enclosed as separate rooms. Shared circulation between workstations is ordinarily part of that work area unless architectural designation or a reviewed distinct corridor establishes a separate tracking Space.
 
-- An **office-use space** that does **not** meet the criteria for a small, enclosed office  
-- A space that exceeds size thresholds where individual, room-based control assumptions no longer apply  
-- A shared-use work area that is treated collectively by energy and building codes
-
-This implicit definition is derived from the following code behaviors.
-
----
+Area is an observed input, not the definition. Do not classify an office as open solely because it exceeds a numerical threshold, or as enclosed solely because it is small. Record actual enclosure and use separately.
 
 #### Relationship to Energy Codes (Lighting Controls)
 
-Energy codes such as the IECC do not define an “open office” directly.
-
-Instead, they distinguish between:
-- **Small, enclosed offices** (typically less than 250 SF), and
-- **Larger office areas** that require different control treatment
-
-When an office space:
-- Is **greater than 250 SF**, and
-- Is **not fully enclosed**, and
-- Serves multiple occupants who cannot be guaranteed to be "satisfied" at the same time
-
-It is implicitly treated as an **open office** for lighting control purposes.
-
-This distinction drives requirements for:
-- Automatic lighting shutoff
-- Control zoning
-- Daylight-responsive controls
+Select applicable office control requirements from the adopted edition and amendments. Independent control-area limits, sensor coverage, shutoff behavior and daylight requirements belong to the referenced code interpretation/playbook, not a timeless size-based vocabulary rule.
 
 ---
 
@@ -354,12 +314,6 @@ Because open offices are shared and behaviorally complex, they require **intenti
 
 ---
 
-## Enclosed Office
-
-*(To be developed)*
-
----
-
 ## Multi-Function / Assembly Spaces
 
 *(To be developed)*
@@ -368,7 +322,44 @@ Because open offices are shared and behaviorally complex, they require **intenti
 
 ## Corridors and Circulation Spaces
 
-*(To be developed)*
+These are KIS working descriptions, not quoted regulatory definitions or automatic occupancy classifications.
+
+- **Corridor:** a distinct traffic passage connecting rooms or larger areas, commonly bounded by opposing walls. It remains a circulation Space even when no luminaire is depicted. A short cased opening is not automatically a corridor; unclear extent needs architectural/owner review.
+- **Door alcove:** a recess serving door access and opening directly onto a larger Space. An untagged three-sided alcove can remain part of the surrounding Space, with its location/doors described there.
+- **Vestibule:** a source-designated entry or transition space. Preserve an architect's actual designation; do not merge every named vestibule merely because the informal phrase "door vestibule" was used for an alcove.
+- **Secondary circulation:** movement paths within another use, such as aisles between open-office workstations. They ordinarily remain part of that use unless architectural evidence supports separate tracking.
+
+A finish/material or ceiling transition can support a reviewed tracking boundary. It does not establish independent occupancy sensing or other control requirements by itself. Architectural naming, actual use and project evidence govern classification; fixture arrangement does not establish a Space boundary.
+
+For LV project tracing and owner review, follow the [extension's boundary workflow](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/design-playbooks/architectural-space-intake.md#when-an-untagged-area-is-its-own-space).
+
+Corridor control guidance is pending edition-specific review. Do not prescribe sensor counts, timeout, dimming behavior or a daylight exemption from this vocabulary entry. Record missing lighting/control documentation as a review question, not proof of an unlit or exempt corridor.
+
+---
+
+## Other Room Functions
+
+These working definitions preserve intended use without automatically assigning Building Code Space Type, Building Code Occupancy Group, Energy Code Space Type or controls. Unknown use stays unknown until source-supported or owner-confirmed. Dedicated control playbooks for these functions remain to develop.
+
+| Function | Working description and classification question |
+|---|---|
+| Conference / meeting room | Space used for group meetings; record capacity, enclosure and actual meeting use separately from office use |
+| Huddle room | Small meeting/collaboration room; the label alone does not establish the applicable meeting-room code category |
+| Break room | Staff rest/refreshment space; distinguish seating, food preparation and equipment functions where relevant |
+| Copy / print room or area | Space serving document production/equipment; record whether enclosed or part of another occupied work area |
+| Storage | Space used to store materials/items; document known purpose and use without inferring contents or classification from shape |
+| IDF / communications room | Source-designated communications/equipment space; the acronym does not establish a lighting-control exception |
+| Wellness room | Source-designated wellness/support space; its specific activity and occupancy need confirmation before code classification |
+| Reception | Space for receiving visitors, desk service and/or waiting; record its actual components and architectural extents |
+| Lobby | Arrival, waiting and circulation space; distinct named uses within it may warrant reviewed tracking subdivisions |
+| Hospitality | Broad source label for amenity/service use; document actual activity rather than automatically treating it as break room, lobby or food service |
+| Classroom | Space used for organized instruction; record the actual instructional use, capacity and enclosure for later classification |
+
+## Daylight Vocabulary
+
+**Primary daylight zone** and **secondary daylight zone** identify geometric areas associated with daylight entering a space under the selected code/edition. They are not room types, power channels or automatic statements that daylight controls are required. Exact extents, naming, thresholds, exceptions and required control separation must be established from that selected reference.
+
+Record window/skylight presence, calculated daylight-zone geometry and control applicability as separate observations/conclusions. Do not use "has windows" as a substitute for a daylight calculation, or use a supply channel's wattage as the whole daylight-zone load. Edition-specific daylight guidance remains to develop through the [lighting guidance index](../../design-playbooks/lighting-controls-guidance-index.md).
 
 ---
 
