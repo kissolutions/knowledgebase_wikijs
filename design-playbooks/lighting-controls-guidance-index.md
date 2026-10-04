@@ -38,6 +38,8 @@ WikiJS owns general electrical room/code analysis, control selection/configurati
 
 For an existing MEP design, extract its documented scheme before using these pages to check it. Missing source information or incomplete guidance creates a review finding. A KIS preferred design pattern is not automatically an approved replacement.
 
+Use the [room classification and controls review playbook](room-classification-and-controls-review-playbook.md) for proposed synonym mappings, owner confirmation, source-function completeness, scoped permission to fill gaps and primary-source fallback when guidance is unfinished. The [application-guide draft](lighting-control-application-guide.md) and [IECC draft profiles](iecc-occupant-sensor-directives.md) are now owned here; their verification gaps remain open.
+
 ## 2. Detail
 
 ### Required Review Inputs
@@ -84,7 +86,7 @@ Record assessed functions, source/code/guide references and revisions, facts rel
 | Area has no tag | Document actual architectural association or an owner-reviewed proposal | Do not create a room/control classification from fixture placement |
 | Finish change splits corridor tracking | Retain architectural evidence and reviewed Space extents | Does not automatically require two independent control zones |
 | Source controls absent | Record no information after reviewing available sources | Physical room/fixture intake can continue; affected design remains pending |
-| Playbook missing or draft rule unverified | Record guidance incomplete and seek manual review | Do not substitute a similar room's recipe without a supported decision |
+| Playbook missing or draft rule unverified | Follow the selected-code primary-source fallback and flag the derivation for owner approval | Keep unresolved options/conditions visible; no automatic recipe or compliance finding |
 | Office area near a numerical trigger | Resolve area/convention and the selected rule | Vocabulary alone never supplies a universal cutoff |
 
 ## 4. Applicability Limits

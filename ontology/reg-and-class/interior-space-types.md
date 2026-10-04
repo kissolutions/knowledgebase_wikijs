@@ -24,6 +24,8 @@ This page describes **what spaces are**, not **how to design them**. Preserve so
 
 ---
 
+For proposed synonym mappings and owner confirmation, follow the [room classification and controls review playbook](../../design-playbooks/room-classification-and-controls-review-playbook.md). This catalog supplies definitions and retrieval candidates; the playbook owns the review process and keeps building and energy classifications separate.
+
 ## 1. How Space Types Are Defined
 
 Interior space types are not defined by a single factor.

@@ -13,6 +13,8 @@ dateCreated: 2026-01-11T18:55:09.915Z
 
 Use the [lighting guidance index](lighting-controls-guidance-index.md) for required review inputs and source/edition verification. This existing playbook is draft guidance: distinguish KIS preferences from code requirements and verify numerical rules against the selected edition/amendments. When checking an existing MEP design, retain its intent and record findings; adopt a preferred alternative only with authority and approval.
 
+Follow the [classification and controls review workflow](room-classification-and-controls-review-playbook.md) when classifying a room or filling incomplete source controls. Unfinished guidance triggers a cited selected-source derivation and owner review; do not use this draft as automatic narrative authority.
+
 <!--
 DESIGN PLAYBOOK
 Domain: Lighting Controls
@@ -378,4 +380,3 @@ ANCHOR: INSTITUTIONAL CONTEXT
 -->
 
 Open office lighting controls are frequently subject to value engineering and minimal stakeholder input. This playbook reflects a bias toward designs that survive those conditions while remaining compliant, predictable, and defensible.
-
