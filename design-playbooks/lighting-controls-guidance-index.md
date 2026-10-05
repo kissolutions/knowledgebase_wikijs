@@ -2,7 +2,7 @@
 title: Lighting Controls Guidance Index
 description: Entry point linking room vocabulary, review inputs, existing lighting playbooks and unresolved guidance
 published: true
-date: 2026-10-04T03:18:00.000Z
+date: 2026-10-05T04:02:42.000Z
 tags: lighting, controls, space types, review
 editor: markdown
 dateCreated: 2026-10-04T03:18:00.000Z
@@ -94,6 +94,27 @@ Record assessed functions, source/code/guide references and revisions, facts rel
 Existing office playbooks include legacy broad edition statements and citation placeholders that need primary-source review before their numbers become reusable verified rules. This index does not validate those statements. No new sensor counts, timeouts, dimming percentages, daylight dimensions or exemption thresholds are adopted here.
 
 A future verified rule profile should state standard/edition, exact section/source, conditions, exceptions, required behavior, amendment scope, reviewer/date and status. Develop those profiles before exposing numeric rules to an automated checker. Do not infer physical sensor quantity from control-area quantity alone.
+
+### Future Feature: 2018 IECC Daylight-Control Exception Calculations
+
+**Status: Flagged for later development; not implemented or adopted as a verified rule.** Build a WikiJS calculation guide and reusable calculator/review worksheet for numerical daylight-responsive-control exceptions. The initial target is the owner's supplied excerpt showing the adjusted interior lighting power allowance in Equation 4-9, provisionally indexed to 2018 IECC C405.2.3 Exception 4. Verify the full selected code text, printing/errata, jurisdiction/amendments and applicability before using the calculation to support a project decision. Keep other exceptions and later editions separate until individually verified.
+
+The supplied excerpt gives this candidate calculation:
+
+`LPA_adj = LPA_norm × (1.0 − 0.4 × UDZFA / TBFA)`
+
+Planned inputs and checks:
+
+- Establish whether the exception's new-building condition and the project's compliance path apply; retain evidence for other provisions that may independently require daylight controls.
+- Determine connected lighting power using the applicable C405.3.1 accounting, rather than assuming a fixture-takeoff sum or LV output load is the code quantity.
+- Determine normal interior lighting power allowance using C405.3.2 and any applicable C406 adjustment identified by the excerpt. Record the allowance method, area categories and verified inputs.
+- Derive uncontrolled sidelit/toplit floor area (`UDZFA`) from verified edition-specific daylight-zone geometry and actual/proposed daylight-control coverage. Resolve overlapping areas and partial coverage under the verified rule; do not blindly sum room or zone areas.
+- Determine total floor area (`TBFA`) using the same building-area scope included in the allowance calculation. A room-only or partial-project takeoff must not silently substitute for the required building-wide inputs.
+- Use consistent units, retain input evidence and calculation precision, and flag missing inputs or impossible area relationships. A zero/unknown denominator cannot produce an exception finding.
+
+The planned report should show inputs, area/allowance basis, equation substitution, adjusted allowance, comparison with connected lighting power, numerical margin and unresolved applicability questions. Distinguish a calculated comparison from an approved exception determination. Include reviewed worked examples and meaningful boundary/missing-input tests when the calculator is implemented. General calculations belong here; an LV project may supply evidence and consume a reviewed result without maintaining a duplicate code rule.
+
+Development evidence: owner-supplied cropped excerpt, October 2026. The full adopted text and surrounding conditions have not yet been validated for this feature. The [ICC 2018 IECC Chapter 4 entry](https://codes.iccsafe.org/content/iecc2018/chapter-4-ce-commercial-energy-efficiency) is a retrieval starting point, not evidence that the full text was reviewed. No project calculation, exception approval or software implementation is created by this backlog entry.
 
 ## 5. Sources and Validation
 
