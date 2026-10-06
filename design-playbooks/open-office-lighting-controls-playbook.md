@@ -380,3 +380,7 @@ ANCHOR: INSTITUTIONAL CONTEXT
 -->
 
 Open office lighting controls are frequently subject to value engineering and minimal stakeholder input. This playbook reflects a bias toward designs that survive those conditions while remaining compliant, predictable, and defensible.
+
+## Owner-Approved Cluster and Parent-Zone Representation
+
+For the KIS LV workflow, each independently occupancy-controlled open-office cluster is a first-class functional child zone with a stable ID. A parent whole-office zone records shared manual control and aggregate cluster occupancy; each physical sensor is counted once and retains all control associations. Exact aggregate logic, timeouts, occupancy/manual precedence and exceptions come from the approved project narrative and applicable verified code basis. This representation does not replace or weaken the edition-specific controls requirements above. Parent lighting membership/load is derived, not duplicated. The implementation contract lives in [LV zone hierarchy v0.7](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/ontology/canonical-model/zone-hierarchy-v0.7.md).

@@ -83,3 +83,7 @@ Draft; KIS Solutions; October 2026.
 ## 15. Author Notes (Institutional Context)
 
 Records owner directives from 2026-10-05; no claim of manufacturer verification beyond cited supplied sheets.
+
+## Input from Earlier Room-Device Review
+
+Room sensors/manual controls are identified, scheduled and provisionally located immediately after narrative lock. Use owner-returned device positions as inputs to aggregator clustering, CIO coordination and bus routing. Preserve Device IDs and parent/child zone associations; physical devices are counted once. The earlier room-center placeholders do not establish sensor coverage or cable lengths.

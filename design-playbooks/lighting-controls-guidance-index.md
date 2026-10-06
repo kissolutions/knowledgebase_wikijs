@@ -162,3 +162,7 @@ Owner-confirmed Beta 1 workflow and vocabulary decisions, October 2026; existing
 ## SmartDC/EPS device-specific allocation
 
 [Device allocation index](smartdc-allocation-index.md): QDCD, CIO, SW4/SW8 and EPS PDU hardware constraints and mini playbooks. Apply after designated micro channels; distinguish manufacturer facts from owner preferences and open verification.
+
+## Printable Narrative/Device Handoff
+
+Locked narratives feed the [LV milestone review packages](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/design-playbooks/milestone-review-packages.md). Open-office clusters are first-class child zones under common-operation parents; retain approved aggregate/manual behavior and physical device associations.

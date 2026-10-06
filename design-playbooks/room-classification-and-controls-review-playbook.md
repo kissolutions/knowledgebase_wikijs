@@ -145,3 +145,7 @@ Escalate unresolved actual use, governing code, source intent, inaccessible text
 ## 15. Author Notes (Institutional Context)
 
 Owner-directed workflow, October 2026, following testing that exposed unfinished space-type controls guides. This page adds review and fallback routing; it does not introduce or verify new numerical code rules, device prescriptions or automated approval logic.
+
+## Narrative Lock and Physical Device Review Handoff
+
+After owner adoption locks the narrative, identify/count its physical sensors, manual switches/dimmers and other room devices with stable IDs and all served-zone associations. The LV extension produces a device schedule and provisional room-center review symbols for owner relocation. Room-center placement is a review convenience, not a coverage/installation recommendation. Owner-returned locations feed subsequent controller/aggregator routing. Retain parent/cluster behavior separately from micro electrical channels. [Milestone deliverables](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/design-playbooks/milestone-review-packages.md).
