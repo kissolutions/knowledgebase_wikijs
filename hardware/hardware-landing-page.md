@@ -87,3 +87,8 @@ Hardware pages provide the **ground truth** these other sections build upon.
 ## Status
 - **Status:** Canonical
 - **Steward:** Lighting Discipline Lead
+
+
+## LV Lighting Power and Control
+
+[QDCD](lighting/qdcd.md) · [CIO](lighting/smartdc-cio.md) · [SW4/SW8](lighting/smartdc-sw4-sw8.md) · [EPS PDU](lighting/eps-pdu.md) · [Device allocation playbooks](../design-playbooks/smartdc-allocation-index.md).

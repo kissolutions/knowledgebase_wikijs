@@ -1,0 +1,50 @@
+{
+  "repository": "knowledgebase_wikijs",
+  "base_commit": "04f26a7ee7f58f58353fe5309d4df33247424de8",
+  "files": [
+    {
+      "path": "hardware/lighting/qdcd.md",
+      "sha256": "18c90bd2302c343006d561c301746511e22566ea1f4d7a9162a043aa5daadb95"
+    },
+    {
+      "path": "hardware/lighting/smartdc-cio.md",
+      "sha256": "2b2fccb216b6b836fe58511e1178eff072734f1b2f9660b56daea1eb7a7fd1c3"
+    },
+    {
+      "path": "hardware/lighting/smartdc-sw4-sw8.md",
+      "sha256": "67a7991e2746fe7903a14739ac97672384f2c8c251eb9388acbc38c5debe1e9e"
+    },
+    {
+      "path": "hardware/lighting/eps-pdu.md",
+      "sha256": "87cdf94f1232946c1a7690b1256e409af67abfb91a5dbd78ada03d6f59fee71f"
+    },
+    {
+      "path": "hardware/hardware-landing-page.md",
+      "sha256": "5d34f3d4966ae3362936a4452131aaa64f765ab2a929092ba1246f3376ec3e29"
+    },
+    {
+      "path": "design-playbooks/qdcd-channel-assignment.md",
+      "sha256": "2ee1cb825907a6ad39e665573607de4ffdae33cef2aa741f13bd653078008aba"
+    },
+    {
+      "path": "design-playbooks/eps-pdu-allocation.md",
+      "sha256": "523c060117b9be7312fdb623758d4a008df1c913145016a4f4dff117c620a76a"
+    },
+    {
+      "path": "design-playbooks/smartdc-sensor-cio-allocation.md",
+      "sha256": "0412ed240136b76c3f41ac4b804992c7e49df618de6cf37ca0d3396e397690cd"
+    },
+    {
+      "path": "design-playbooks/smartdc-allocation-index.md",
+      "sha256": "dfa6beb7811f980d6eebf43e4da01728fce2b9a08e94cb90f4123828b0550c0e"
+    },
+    {
+      "path": "design-playbooks/lighting-controls-guidance-index.md",
+      "sha256": "ae0f2e226febd1d485bbe2fb30ebbb851864a338c704e96441621a84b5f8d06b"
+    },
+    {
+      "path": "README_CONTROLLER_POWER_UPDATE.md",
+      "sha256": "5d80c11a7215eed12559302c0691947fccebd0244ab27d23dd9ec687533511b6"
+    }
+  ]
+}
