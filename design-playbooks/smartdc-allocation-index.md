@@ -35,3 +35,11 @@ Dedicated SW4/SW8 and EPS sheets; SW power/input compatibility/listings/device-c
 For single fixtures above 95 W, review the [EPS fixture power aggregation directive](eps-pdu-allocation.md#eps-fixture-power-aggregation--owner-directive-2026-10-06): 1–4 Class 2 feeds, one combined fixture output, inside the fixture housing, restricted to on/off nominal 48 VDC CV. Count every feed and keep all feeds in the same approved control group. Sensor aggregators are separate. Current model support is pending; retain design candidates with a feed ledger rather than forcing them into ordinary single-channel limits.
 
 The allocation decision tree starts when a **single fixture exceeds 95 W**. Dimming is a hard incompatibility with the typical aggregator path. A compatible on/off 48 VDC CV fixture becomes one dedicated combined-power LV micro zone with one aggregator output and the necessary 1–4 upstream channels. See [decision tree](https://github.com/kissolutions/knowledgebase_wikijs/blob/main/design-playbooks/eps-pdu-allocation.md#oversized-single-fixture-decision-tree-and-micro-zone).
+
+## Open Framework Item: Exterior Lighting
+
+**Status: unresolved. Owner flag: 2026-10-06.**
+
+Exterior lighting needs dedicated framework guidance: scope and area/fixture classification, applicable lighting-control/code review and narrative, compatible power/driver selection, outdoor equipment/installation evidence and coordination with the LV implementation workflow. Do not infer an exterior control sequence or equipment suitability from existing interior guidance.
+
+Low-opacity wine/burgundy exterior map fill is an accepted presentation directive, not a completed exterior-lighting design rule. Track implementation and review deliverables in the [LV workflow open item](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/design-playbooks/lv-project-workflow-and-readiness.md#open-framework-item-exterior-lighting).
