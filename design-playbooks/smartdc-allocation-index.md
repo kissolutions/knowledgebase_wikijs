@@ -29,3 +29,7 @@ LV extension owns project records, sequence, markup and companion topology contr
 ## Open Verification Items
 
 Dedicated SW4/SW8 and EPS sheets; SW power/input compatibility/listings/device-count rules; QDCD direct sensor capacity and wired/wireless limits; reduced-feed/internal aggregation; CIO/Casambi precedence; precise bus distance/branch/termination rules; PDU command/API vs SNMP notification behavior; controller-only Smart and mixed PDU policy; practical lamp/feed route and voltage-drop limits; expansion/spare policy. Unknowns block only the dependent conclusion. CIO owner location is required before final routes.
+
+## Larger-Fixture EPS Power Aggregation
+
+For fixtures above 100 W, review the [EPS fixture power aggregation directive](eps-pdu-allocation.md#eps-fixture-power-aggregation--owner-directive-2026-10-06): 1–4 Class 2 feeds, one combined fixture output, inside the fixture housing, restricted to on/off nominal 48 VDC CV. Count every feed and keep all feeds in the same approved control group. Sensor aggregators are separate. Current model support is pending; retain design candidates with a feed ledger rather than forcing them into ordinary single-channel limits.

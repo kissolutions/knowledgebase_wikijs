@@ -85,3 +85,7 @@ Do not infer signal precedence, reduced-input routing, failure state or emergenc
 ## 17. Status and Stewardship
 
 Draft; last reviewed 2026-10-06; steward KIS Solutions. Owner directives are design policy, separately identified from manufacturer evidence.
+
+## Fixture Power Aggregator Accessory
+
+Owner directive dated 2026-10-06: an EPS fixture power aggregator combines 1–4 separate Class 2 supply inputs into one output, up to an owner-stated 400 W, inside a fixture housing. This supports larger nameplate fixtures, particularly high bays. KIS reserves it for on/off-only nominal 48 VDC constant-voltage operation through EPS outputs; no dimming or constant-current use. Input count follows fixture demand and verified feed/aggregate constraints, not an automatic four-feed allocation. It is distinct from sensor aggregators and from QDCD's four lighting outputs. The exact product specification is not yet verified. See [allocation directive](../../design-playbooks/eps-pdu-allocation.md#eps-fixture-power-aggregation--owner-directive-2026-10-06) for feed counting, coordinated on/off control, evidence and current model-support limits.
