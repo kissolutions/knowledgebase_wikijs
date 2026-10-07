@@ -64,7 +64,24 @@ The training shorthand does not settle the catch-all's exact 300-square-foot equ
 
 ### 2021
 
-S21 lists instruction rooms, meeting/multipurpose rooms, copying/printing spaces, lounges/break rooms, enclosed offices, open offices, toilets, storage, lockers, corridors, warehouse storage, and other rooms no larger than 300 square feet enclosed by floor-to-ceiling partitions. The 300-square-foot condition qualifies the other-room category; it is not a size exemption for an explicitly listed office.
+S21 lists the following spaces requiring occupant sensor controls:
+
+- Classrooms/lecture/training rooms.
+- Conference/meeting/multipurpose rooms.
+- Copy/print rooms.
+- Lounges/breakrooms.
+- Enclosed offices.
+- Open plan office areas.
+- Restrooms.
+- Storage rooms.
+- Locker rooms.
+- Corridors.
+- Warehouse storage areas.
+- Other spaces 300 square feet (28 m²) or less that are enclosed by floor-to-ceiling height partitions.
+
+**Exception:** Luminaires that are required to have specific application controls in accordance with Section C405.2.5.
+
+The 300-square-foot condition qualifies the other-space category; it is not a size exemption for an explicitly listed office.
 
 General controls require shutoff within 20 minutes, manual-on or automatic-on limited to half power, and manual-off, subject to the section's full-on/manual-control exception. Route warehouse, open-office, and corridor cases to their dedicated subsections. Open offices below 300 square feet use the general function; other open offices require independently controlled zones no larger than 600 square feet. Finalize their complete operating sequence only after the remaining section/exception verification in the source register.
 
