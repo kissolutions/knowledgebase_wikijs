@@ -30,15 +30,17 @@ Select the project edition, jurisdiction, amendments, applicable printing/errata
 
 ## Source Register and Verification Status
 
-Sources reviewed October 3, 2026. ICC search retrieval supplied some section text, but direct page requests returned access errors. Government training material and original government-commissioned code-change analysis supplement the retrieved ICC text. Development proposals and another jurisdiction's amended code were not treated as final unamended model-code authority.
+Sources initially reviewed October 3, 2026; owner-supplied 2021 subsection excerpts and first-pass routing added October 7, 2026. ICC search retrieval supplied some section text, but direct page requests returned access errors. Government training material and original government-commissioned code-change analysis supplement the retrieved ICC text. Development proposals and another jurisdiction's amended code were not treated as final unamended model-code authority.
 
 | ID | Primary source and locator | Supports | Remaining verification |
 |---|---|---|---|
 | S15 | [DOE 2015 lighting training](https://www.energycodes.gov/sites/default/files/2019-09/2015_IECC_commercial_requirements_lighting.pdf), PDF pages 20–23 | Listed-space examples, general function, warehouse outline | Complete final C405.2.1 list and exceptions; exact catch-all area operator; printing/errata |
 | S18 | [DOE 2018 lighting training](https://www.energycodes.gov/sites/default/files/2019-09/2018_IECC_commercial_requirements_lighting.pdf), PDF pages 18–21 | Listed spaces, general function, open-office zoning/actions | Exact catch-all area operator and complete final exception text; printing/errata |
 | S18O | [ICC 2018 C405.2.1.3](https://codes.iccsafe.org/s/IECC2018P5/chapter-4-ce-commercial-energy-efficiency/IECC2018P5-CE-Ch04-SecC405.2.1.3) | Open-office threshold and maximum zone area | Full final section/exception comparison with S18 |
-| S21 | [ICC 2021 Chapter 4](https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency), C405.2.1, .1.1, .1.3 | Listed spaces, general function, open-office threshold/zone size | Full open-office sequence and exceptions; project adoption/amendments |
+| S21 | [ICC 2021 Chapter 4](https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency), C405.2.1, .1.1, .1.3 | Listed spaces, general function, open-office threshold/zone size | Project adoption/amendments and printing comparison; see S21U for supplied subsection text |
 | S21E | [ICC 2021 errata](https://www.iccsafe.org/wp-content/uploads/errata_central/2021-International-Energy-Conservation-Code-Errata-Complete.pdf), PDF pages 17–19 | Corrected warehouse, corridor, time-switch text | Confirm application to the project's printing and adopted text |
+| S21U | Owner-supplied 2021 excerpt, received October 7, 2026, C405.2.1.2 and C405.2.1.3 | Warehouse's four functions; open-office threshold, four functions and item 3 exception | Confirm excerpt against the project's adopted printing/amendments; source supplied in owner conversation |
+| S21T | [City of Scottsdale 2021 interior lighting controls checklist](https://ww2.scottsdaleaz.gov/Assets/ScottsdaleAZ/Design/green-building/2021%2BIECC%2BInterior%2BLighting%2BControls%2BChecklist.pdf), page 1, C405.2.2 | Corroborates time-switch routing where compliant occupant-sensor controls are not provided | Municipal checklist is supporting evidence, not a substitute for the project's adopted text and exceptions |
 | S21A | [DOE/PNNL 2021 commercial analysis](https://www.energycodes.gov/sites/default/files/2022-09/2021_IECC_Commercial_Analysis_Final_2022_09_02.pdf), PDF page 33, section 3.4.2 | Corridor requirement added relative to 2018 | Does not replace final code/exception review |
 | S24A | [Florida Building Commission comparison report](https://www.floridabuilding.org/fbc/publications/Research_2023_2024/2023-FBCEC-vs-2024-IECC-and-2022-ASHRAE-901_FinalReport.pdf), PDF pages 76–77, C405.2 and C405.2.1 rows | Final-edition change summary, including four added categories | Complete final 2024 space list, control exceptions, printing/errata |
 | S24G | [ICC 2024 C405.2.1.1](https://codes.iccsafe.org/s/IECC2024V1.1/chapter-ce-4-commercial-energy-efficiency/IECC2024V1.1-CE-Ch04-SecC405.2.1.1) | Retrieved general-control function | Complete final exception text and project amendment review |
@@ -83,9 +85,47 @@ S21 lists the following spaces requiring occupant sensor controls:
 
 The 300-square-foot condition qualifies the other-space category; it is not a size exemption for an explicitly listed office.
 
-General controls require shutoff within 20 minutes, manual-on or automatic-on limited to half power, and manual-off, subject to the section's full-on/manual-control exception. Route warehouse, open-office, and corridor cases to their dedicated subsections. Open offices below 300 square feet use the general function; other open offices require independently controlled zones no larger than 600 square feet. Finalize their complete operating sequence only after the remaining section/exception verification in the source register.
+#### General occupant-sensor function — C405.2.1.1
 
-S21E corrects warehouse control: separate aisleways, vacancy reduction to at most half power within 20 minutes, time-switch shutoff for lights not shut off by sensors, and manual-off. It corrects corridor control to uniform vacancy reduction to at most half power within 20 minutes. The corridor exception concerns less than two footcandles at the darkest floor point with all lights on; it needs illumination evidence, not a guess from fixture count. The errata also identifies time-switch exceptions; verify them independently rather than transferring them to the sensor requirement.
+General controls require shutoff within 20 minutes, manual-on or automatic-on limited to half power, and manual-off, subject to the section's full-on/manual-control exception. Route warehouse, open-office, and corridor cases to their dedicated subsections.
+
+#### Warehouse storage areas — C405.2.1.2
+
+Occupant sensors are required for warehouse storage areas under C405.2.1; a time switch does not replace them. S21U supplies the following functions, consistent with the warehouse corrections in S21E:
+
+- Control each aisleway independently of other aisleways and open areas.
+- Within 20 minutes after everyone leaves a controlled area, automatically reduce that area's lighting power to no more than 50%.
+- Where occupant sensors do not turn lights off, provide time-switch shutoff complying with C405.2.2.1.
+- Provide manual control allowing occupants to turn the lights off.
+
+**KIS partial-off application:** Occupancy sensors reduce lighting on vacancy; because those same lights remain on at a reduced level, time-switch controls must sweep them off for scheduled unoccupied periods, including after hours, in accordance with C405.2.2.1. This is **occupancy plus time switch**, not a choice between them and not limited to a separate set of “other” lights. Record both functions in the narrative. If a lighting load is claimed exempt for safety, security or continuous operation, document the applicable adopted exception and its scope; a security/life-safety label alone does not establish an exemption. Keep required emergency operation separately reviewed.
+
+#### Open plan office areas — C405.2.1.3
+
+S21U supplies the following requirements:
+
+- Open plan offices **less than 300 square feet (28 m²)** follow the general occupant-sensor function in C405.2.1.1.
+- All other open plan offices, including exactly 300 square feet, follow these requirements:
+  1. Divide general lighting into independently controlled zones no larger than **600 square feet (55 m²)** each.
+  2. When a zone is occupied, its general lighting may turn on automatically. General lighting in other, unoccupied zones may turn on automatically at no more than **20% of full power**, or remain unaffected. These are permissions, not mandatory automatic-on behavior.
+  3. Turn off general lighting in every zone within **20 minutes after the entire office becomes vacant**. **Exception to this item only:** general lighting may instead be turned off by time-switch controls complying with C405.2.2.1.
+  4. Within **20 minutes after an individual zone becomes vacant**, turn its general lighting off or uniformly reduce it to an unoccupied setpoint no greater than **20% of full power**.
+
+The whole-office time-switch exception does not remove independent zoning or individual-zone vacancy response. Preserve both zone-level and whole-office behavior in the narrative; do not replace the zone response with only an aggregate occupancy signal.
+
+#### Corridors — dedicated function
+
+S21E corrects corridor control to uniform vacancy reduction to at most half power within 20 minutes. The corridor exception concerns less than two footcandles at the darkest floor point with all lights on; it needs illumination evidence, not a guess from fixture count. The errata also identifies time-switch exceptions; verify them independently rather than transferring them to the sensor requirement.
+
+#### Other spaces — first-pass control routing
+
+After matching explicit C405.2.1 uses, check the catch-all: other spaces **300 square feet or less**, enclosed by floor-to-ceiling partitions, are also occupant-sensor candidates. Do not send these directly to time-switch review merely because their room name is absent from the list. Use verified area/enclosure evidence; markup areas labeled check-only do not settle a threshold.
+
+For remaining spaces, use the [classification playbook's first pass](room-classification-and-controls-review-playbook.md#step-1a--first-pass-routing-for-other-spaces). Attempt a source-supported Building Code Space Type and Occupancy Group, even when no explicit Energy Code Space Type has been established. Actual use and classification help identify the applicable rule and a practical proposal; an occupancy group alone does not mandate a control choice.
+
+The initial control-path candidates are **occupancy** and **time switch**. C405.2.2 routes areas without occupant-sensor controls complying with C405.2.1.1 to time-switch controls complying with C405.2.2.1, subject to applicable exceptions (S21T corroborates this routing). Thus, where permitted, evaluate a compliant occupant-sensor solution or time-switch solution for these remaining areas; do not present them as unrestricted alternatives in a sensor-mandated space. Check the adopted text, specific-application controls and exceptions before finalizing.
+
+These are review classifications, not mutually exclusive equipment lists. Warehouse and open-office functions above show how both may be needed in one space. Record each required function and its control method; retain `needs_review` separately when the use, source text, exception or proposed sequence is unresolved. A scheduling pattern may inform a KIS design preference, but must not be represented as an IBC-to-IECC requirement. Other manual, daylight, light-reduction and emergency requirements remain separate reviews.
 
 ### 2024
 
