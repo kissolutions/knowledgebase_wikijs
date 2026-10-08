@@ -69,6 +69,12 @@ Do not stop the classification attempt because the architectural label has no ex
 
 The review output includes Space ID, exact source room label/use, proposed building-code space type and occupancy group, proposed energy-code type (or unresolved), verified area/enclosure where needed, occupancy/time-switch candidate and any combined functions, rule/source locator, documented-versus-inferred basis, and review status. This is a documentation/review directive; it does not claim new schema fields or an implemented automatic matcher.
 
+### Area Precision for Threshold Decisions
+
+Use first-pass room/zone area estimates to screen the thresholds explicitly present in the applicable code provision. Detailed area takeoff is not required for every room. If the estimate is near a threshold such that plausible uncertainty could change the result, perform a second, more accurate measurement before finalizing the affected control decision. If uncertainty cannot be bounded, obtain better measurement evidence rather than assuming the room falls on the convenient side.
+
+Record the applicable section, actual area definition and exact comparison operator; examples such as 250, 300 or 600 square feet apply only where the selected code provision establishes them. Check the area of the object regulated by the rule (room, open-office area or individual control zone). Use calibrated/dimensioned source geometry for the second pass and retain its basis, refined result and any resulting narrative/zone change. Use unrounded values. A check-only display polygon is useful for screening but is not automatically accurate threshold evidence. Far from a threshold, a supported above/below conclusion with recorded basis is sufficient for screening; important quantity takeoffs remain the owner's separate work.
+
 ### Step 2 — Confirm Classifications
 
 The owner reviews candidates, confirms or revises the supported use and classification for each room, or leaves the issue unresolved. Record confirmed values, owner/date, basis and affected Space IDs. Confirm the applicable code basis and inputs needed for later analysis. Confirmation of a room type authorizes progression of that analysis; it does not authorize replacement or completion of source controls. Source extraction may proceed in parallel, but classification-dependent conclusions remain provisional until confirmation.

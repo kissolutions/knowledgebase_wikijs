@@ -144,6 +144,10 @@ Retrieved S24G retains a 20-minute general vacancy shutoff, manual-on or half-po
 
 Room-use aliases and interpretation decisions need owner review. For example, an untagged equipment enclosure must not become storage, a room named Recovery must not become patient-care space, and a large open reception must not become an open office solely to trigger a convenient rule.
 
+### Area Threshold Screening and Second Pass
+
+Use a first-pass area estimate to identify rooms/control zones near thresholds explicitly established by the selected IECC section. Where plausible measurement uncertainty could change the branch or zone-area result, make a second accurate pass using checked dimensions/scale and the applicable boundary before finalizing that decision. Unbounded uncertainty also requires better evidence. Record the threshold, exact inequality, first/refined area basis and outcome; do not compare rounded markup labels. Areas safely away from applicable thresholds do not need unnecessary precision. See the [classification review's area directive](room-classification-and-controls-review-playbook.md#area-precision-for-threshold-decisions). This targeted verification does not convert all room-map areas into quantity takeoffs.
+
 ## Control Zones Versus Physical Sensor Quantity
 
 For an applicable, verified open-office rule with maximum zone area 600 square feet, KIS derives the area-only lower bound:
