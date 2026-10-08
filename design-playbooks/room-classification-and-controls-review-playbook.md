@@ -105,6 +105,41 @@ Flag every source-text derivation for owner review, including which functions de
 | Unfinished/missing room guide | Use reviewed selected-source derivation; flag interpretation and remaining choices for approval |
 | Owner provides a narrative | Record it as owner direction, check applicable requirements and resolve conflicts before adoption |
 
+## M3 Scope Boundaries
+
+**Sequence parameter specificity.** Owner-level specificity is sufficient at M3. A sequence may establish its trigger, resulting state and control method without fixing clock times, manual-override durations, override area limits or commissioning setpoints. Record those parameters as **deferred to M4/M5**, when zones, channels and loads make them answerable, rather than as M3 deficiencies. “Business Hours” is a sufficient schedule description; an M3 gate does not fail because it is not yet “5:00–22:00.” Preserve any already established values and applicable code constraints separately from the project settings still to be selected.
+
+**Photometric scope.** Wattage is the quantitative lighting-performance check at M3; photometric calculations are outside this gate. Record any illuminance-dependent requirement and its basis, including a reduced-level footcandle floor, a corridor darkest-floor-point exception or a daylight setpoint's delivered level, and defer its verification. Do not hold M3 open for calculations requiring photometry. Do not convert percentage of input power into an illuminance claim: flag the unit mismatch and carry it forward. A deferred exception remains unverified, not proven by M3 acceptance.
+
+This scope limit does not cancel the targeted area-threshold screening/second pass above: that is classification evidence rather than a photometric performance check. Record counts and known values normally without manufacturing detailed design inputs.
+
+**Deferred-item handoff.** List the affected sequence/Space/zone, parameter or requirement, basis, missing evidence, responsible follow-up and receiving milestone (M4/M5). M3 acceptance covers the owner-level control direction; it does not close these later checks or certify final compliance. Distinguish an explicitly deferred implementation detail from a missing control direction or contradictory sequence.
+
+## Daylight Zones — Directive, Flagged for Expansion
+
+Every Space receives an explicit daylight-zone determination: **zone**, **not a zone**, or **unresolved**. State absence explicitly; never interpret a blank or null as “no.” Record the project code edition and determination basis for each Space, including negative determinations.
+
+**Owner assertion versus measured geometry.** An owner-asserted zone extent is sufficient to carry an M3 control decision. Record it as an owner assertion, with the owner decision reference; keep missing sidelit/toplit geometric evidence as a separate open question. An asserted zone is not a measured zone. Without source evidence or an owner assertion, retain unresolved rather than inventing either geometry or an assertion.
+
+**Extent is an independent fact.** A daylight zone can span several Spaces or only part of one. Give it a stable review identity and record all covered Space IDs, described/asserted/measured extent and basis, responding luminaire IDs, and setpoint with units when established. Unknown setpoints/units remain explicit and deferred under the M3 scope rule. Do not derive zone extent from room boundaries or treat every luminaire in a covered room as responding automatically. Record daylight-control applicability separately from zone presence.
+
+**Edition sensitivity.** Daylight provisions are edition-dependent: thresholds, zone definitions, lighting-power trade-offs and exceptions must be reviewed for the selected edition. Never carry a daylight conclusion across editions. When the project edition changes, reopen and re-run all daylight determinations and dependent control conclusions, preserving prior decisions as history.
+
+**Geometry evidence.** Geometric establishment requires glazing evidence sufficient to determine the relevant extents and heights: elevations, window/storefront schedules or a calibrated plan with glazing extent and head-height information, as applicable. Where the source set lacks this evidence, state the gap; retain an existing owner assertion as asserted and do not invent geometry. This section is flagged for expansion into edition-specific geometry and verification guidance, not an automatic geometric evaluator.
+
+## Narrative-versus-Fixture Cross-Reference — Standing M3 Check
+
+After control direction is recorded and before the M3 gates, review **every Space in both directions**:
+
+- **Direction with no luminaires:** determine whether it is served by another Space's fixtures (for example, an open vertical volume or adjacent open area), has fixtures missing from the source, or is genuinely unlit and correctly out of lighting scope. Name the disposition and evidence. Record the serving Space and fixture references where applicable; unresolved service is an explicit finding. Do not mark it out of scope merely because its own fixture list is empty.
+- **Luminaires with no direction:** record an omission and resolve it. No Space with luminaires leaves M3 without a control direction. A shared sequence/control association may provide that direction when explicitly traced.
+
+Publish a **separate cross-reference review record**, not only room notes. Include model/source revision, all reviewed Space IDs, sequence/direction reference, luminaire references, serving-Space relationship where relevant, disposition, finding/resolution and decision evidence. Summarize Spaces checked and findings open/resolved, including a zero-findings result. Preserve physical fixture identity and primary ownership; record shared service without duplicating fixtures or loads.
+
+An anonymized owner-reported first application found one issue among 47 Spaces: a stair with time-switch direction appeared to lack fixtures, but was served by pendants at the level above. Retain this as workflow precedent, not evidence that every empty fixture list has the same explanation.
+
+These are required project review records and manual/agent checks. They do not claim new schema fields, automatic daylight geometry or an implemented cross-reference validator.
+
 ## 7. Decision Gates
 
 | Gate | Pass evidence | Pending result |
@@ -113,7 +148,11 @@ Flag every source-text derivation for owner review, including which functions de
 | Source scheme complete? | Function-by-function source observations or supported not-applicable basis | Explicit source gap/ambiguity |
 | Missing-function narrative authorized? | Existing or new scoped authorization, or supplied owner narrative | No assigned replacement controls |
 | Guidance supports the proposed function? | Applicable verified guidance, or a reviewed primary-source derivation | Guidance gap; no automatic compliance result |
+| Narrative/fixture cross-reference complete? | Separate all-Space review record; each lit Space has direction; empty fixture lists have an explicit disposition/service relationship or finding | Missing direction or unresolved service contradiction |
+| M3 deferrals recorded? | Parameter/photometric follow-ups assigned to M4/M5 with basis; every Space has an explicit daylight determination | Missing determination or untracked follow-up; an identified deferred parameter alone is not an M3 deficiency |
 | Interpretation/options/narrative approved? | Identified approval and adopted revision within authority | Proposal remains provisional |
+
+Apply the M3 scope boundaries above when evaluating these gates. Owner-level narrative approval does not require deferred clock settings, override details, geometric daylight confirmation of an owner assertion, or photometric proof.
 
 These are review gates, not implemented model fields or an automatic compliance engine. Approval of one gate does not approve the others. Missing source evidence and missing guidance are distinct issues: an unavailable criterion leaves the check not reviewed; it does not by itself prove that the source scheme is deficient.
 

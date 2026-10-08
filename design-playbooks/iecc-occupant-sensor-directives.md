@@ -115,7 +115,7 @@ The whole-office time-switch exception does not remove independent zoning or ind
 
 #### Corridors — dedicated function
 
-S21E corrects corridor control to uniform vacancy reduction to at most half power within 20 minutes. The corridor exception concerns less than two footcandles at the darkest floor point with all lights on; it needs illumination evidence, not a guess from fixture count. The errata also identifies time-switch exceptions; verify them independently rather than transferring them to the sensor requirement.
+S21E corrects corridor control to uniform vacancy reduction to at most half power within 20 minutes. The corridor exception concerns less than two footcandles at the darkest floor point with all lights on; it needs illumination evidence, not a guess from fixture count. At M3, record the illuminance-dependent exception and defer photometric verification under the [M3 scope boundaries](room-classification-and-controls-review-playbook.md#m3-scope-boundaries); do not block M3 for that calculation or mark the exception verified without evidence. The errata also identifies time-switch exceptions; verify them independently rather than transferring them to the sensor requirement.
 
 #### Other spaces — first-pass control routing
 
@@ -166,6 +166,12 @@ Do not equate installed sensor count with room area or the number of control zon
 | Confirmed 2021 open office, 1,450 square feet | C405.2.1.3 independent-zone area ceiling applies, subject to applicability/exception review | At least 3 control zones by area; actual polygons and physical sensor quantities need design |
 | Untagged 180-square-foot enclosure, enclosure/use evidence missing | Insufficient facts to assign a final energy-code type or catch-all result | Preserve inventory; obtain source/owner confirmation |
 | Corridor being evaluated under 2015 versus 2021 | S21A confirms the later explicit corridor addition | Select the year-specific rule; do not transfer the newer mandate to the older profile |
+
+## M3 Scope and Daylight Handoff
+
+Apply the [M3 scope boundaries](room-classification-and-controls-review-playbook.md#m3-scope-boundaries): owner-level triggers, resulting states and control methods can be accepted while detailed schedules, override settings and commissioning setpoints are deferred to M4/M5. Preserve code constraints and later verification obligations; deferred photometry is not an M3 deficiency and power percentages do not prove illuminance.
+
+Follow the [daylight-zone directive](room-classification-and-controls-review-playbook.md#daylight-zones--directive-flagged-for-expansion): each Space explicitly records zone/not a zone/unresolved, edition, extent/service relationships and basis. Owner assertions support M3 direction while geometric verification remains separate. Re-run determinations when the edition changes.
 
 ## Review Output and Implementation Boundary
 
