@@ -137,6 +137,19 @@ Source labels and retrieval aliases may generate candidates only. Unknowns remai
 
 The project review package records Space IDs; original names/use evidence; candidate and confirmed independent classifications; owner/date; selected code basis; function-by-function source controls and gaps; scoped narrative authorization or owner direction; guide/source revisions; derived requirements/options/exceptions and uncertainties; proposed narrative; approval/adopted revision; and unresolved discrepancies. Retain known source functions and distinguish source, applied and proposed behavior. Existing project narratives, references and review/open-item records suffice until a structured contract is implemented.
 
+### M3 Control Narrative Data — Light Reduction
+
+Include a dedicated **Light Reduction** header/column in every room/zone control narrative data table, alongside manual switches, occupancy and the other control functions. Carry it into review prints and adopted narrative records; do not leave this behavior discoverable only inside prose or the occupancy column.
+
+Use readable values such as **Partial on**, **Partial off**, **50% off**, **50% on**, and **None**. These are examples, not a closed list. A sequence may include both partial-on and partial-off behavior; record both in the same cell or as separate actions associated with the same room/zone.
+
+- State the applicable trigger and resulting level in the cell or linked narrative, including delay and affected lighting where established.
+- Qualify percentages: power remaining, power reduction, light output, or a switched lighting group. Preserve the source meaning; do not assume these bases are interchangeable. For example, “Partial off — reduce lighting power to 50% on vacancy” describes a resulting power level.
+- **None** means an explicitly established absence of light-reduction behavior. Missing or unresolved information remains **Unknown / pending review**, never defaulted to None.
+- Keep source, proposed and adopted values distinguishable and preserve their evidence/decision references. A shorthand value does not by itself establish a code requirement, dimming hardware capability or final shutoff method. Retain occupancy and time-switch functions separately.
+
+This is a required project narrative-data header. Existing linked project review records carry it until a versioned structured narrative contract is implemented.
+
 ## 12. When to Go Deeper / Exit This Playbook
 
 Escalate unresolved actual use, governing code, source intent, inaccessible text, consequential exceptions, conflicting owner direction, system limitations or missing coverage evidence. Continue unrelated verified work; do not finalize affected controls. Project approval of an interpretation does not automatically promote it into reusable WikiJS guidance. A separate knowledge review establishes applicability, sources, options, exceptions and page/rule status before reuse as an approved default.

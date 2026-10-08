@@ -43,6 +43,7 @@ The [lighting guidance index](lighting-controls-guidance-index.md) links room de
 | Control areas | Room boundary, independent occupancy zones, daylight/manual subdivisions, maximum applicable zone area, and boundary-review notes |
 | Sensor design | Referenced sensor model/technology, coverage evidence, placement pattern, physical quantity or conditional quantity rule, obstructions, and expansion triggers |
 | Activation | Manual-on, partial-on percentage, or permitted full-on; manual-off arrangement and override behavior |
+| Light Reduction | Dedicated narrative-data header: partial on, partial off, 50% off, 50% on, none, or another supported behavior; include combined actions as needed. State trigger/resulting level and percentage basis; unknown is not none. Follow the [M3 data directive](room-classification-and-controls-review-playbook.md#m3-control-narrative-data--light-reduction) |
 | Vacancy | Delay, full-off or reduced-power setpoint, affected area, and return-to-occupancy behavior |
 | Time-switch operation | When required, scheduling basis, holidays, override area/duration, interaction with occupant sensors, and handling of unknown schedules |
 | Dimming/daylight | Applicable independent requirements and coordinated actions; do not equate partial-on permission with a universal dimming mandate |
