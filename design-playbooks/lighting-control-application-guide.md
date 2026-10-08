@@ -51,6 +51,10 @@ The [lighting guidance index](lighting-controls-guidance-index.md) links room de
 | LV implementation | Functional zones, downstream controller inputs/outputs, channel-grouping constraints, and verified load limits |
 | Verification | Source/code review, coverage/layout review, expected sequence checks, and required functional testing |
 
+## M3 Review Presentation
+
+Present each sequence as its own section: sequence number, full narrative and required functions/components, followed immediately by the rooms/zones assigned to it. Room rows show actual documented/proposed devices, quantities, capabilities and settings, with a dedicated Light Reduction implementation column. Use the [sequence-section review layout](room-classification-and-controls-review-playbook.md#m3-review-layout--one-section-per-sequence). Repeated room requirements are derived from the shared sequence; differing hardware quantities do not by themselves create new narratives.
+
 ## Sensor Quantity Rules
 
 Separate three outputs: the code-required independent control areas, the physical sensing devices, and the controller/channel arrangement. The application guide ties them together without treating them as interchangeable counts.

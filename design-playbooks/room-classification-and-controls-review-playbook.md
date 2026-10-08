@@ -137,16 +137,35 @@ Source labels and retrieval aliases may generate candidates only. Unknowns remai
 
 The project review package records Space IDs; original names/use evidence; candidate and confirmed independent classifications; owner/date; selected code basis; function-by-function source controls and gaps; scoped narrative authorization or owner direction; guide/source revisions; derived requirements/options/exceptions and uncertainties; proposed narrative; approval/adopted revision; and unresolved discrepancies. Retain known source functions and distinguish source, applied and proposed behavior. Existing project narratives, references and review/open-item records suffice until a structured contract is implemented.
 
+### M3 Review Layout — One Section per Sequence
+
+Organize the M3 controls narrative review by sequence, preserving **one narrative to many rooms/zones**. Each section contains, in order:
+
+1. **Sequence number / stable ID, title and revision**, with proposal/adoption status.
+2. **Complete narrative**, including activation, vacancy, delays, overrides and interactions that have been established.
+3. **Required functions and components**, shown once for the sequence: manual/automatic operation, manual switching, occupancy/vacancy sensing, dimming, Light Reduction, daylight, time-switch and other applicable functions. State required behavior and component types; state fixed quantities only when the narrative actually requires them.
+4. **Assigned-room implementation table**, immediately below: every assigned Room ID/name and applicable zone ID, showing the devices, quantities, capabilities and settings actually documented or proposed for that room. Do not repeat generic requirements or fill rows with “required”/“yes” when concrete implementation information exists.
+
+Use consistent columns across sequence sections. Suggested headers: **Room ID / Name | Zone | Basis / Status | Manual Controls | Occupancy / Vacancy Sensors | Dimming | Light Reduction | Daylight | Time Switch | Differences / Open Items**. For example, show “2 wall switches,” “1 ceiling sensor — vacancy mode,” “1 wall dimmer serving general lights,” or “2 switched groups — 50% power remains after vacancy,” as supported. Light Reduction remains a dedicated column, describing that room's implementation of the sequence requirement.
+
+At M3, “what we have” means the documented source arrangement or the current proposed/adopted design, not a claim of installed or field-verified equipment. Label the basis/status and retain source/decision references; separate source and proposed entries where they differ. Record known quantities without inventing devices to complete a table. If device selection/count is pending narrative lock or coverage review, show **TBD** and the outstanding question. Physical device scheduling and final placement still follow narrative lock.
+
+Keep matching entries identically worded and quantity-first so the owner can scan down columns. Mark differing cells with a short text flag as well as optional shading; distinguish a legitimate quantity/layout variation from a functional mismatch. Use **None** only for a confirmed absence, and **Unknown / TBD** for unresolved data. A quantity difference does not automatically require a different sequence; a different operating behavior needs a reviewed sequence variant or reassignment. Shared devices retain one physical identity and show their shared service instead of inflating totals.
+
+Repeat the sequence ID and table headers on continuation pages. Keep the narrative and requirement summary with the start of its room table. An optional overall assignment index may supplement these sections, but does not replace them. Review sequence approval separately from room-assignment/implementation approval; highlight changes since the prior review without obscuring unchanged entries.
+
 ### M3 Control Narrative Data — Light Reduction
 
 Include a dedicated **Light Reduction** header/column in every room/zone control narrative data table, alongside manual switches, occupancy and the other control functions. Carry it into review prints and adopted narrative records; do not leave this behavior discoverable only inside prose or the occupancy column.
 
-Use readable values such as **Partial on**, **Partial off**, **50% off**, **50% on**, and **None**. These are examples, not a closed list. A sequence may include both partial-on and partial-off behavior; record both in the same cell or as separate actions associated with the same room/zone.
+In the sequence requirement summary, use readable values such as **Partial on**, **Partial off**, **50% off**, **50% on**, and **None**. These are examples, not a closed list. A sequence may include both partial-on and partial-off behavior; record both in the same cell or as separate actions associated with the same room/zone.
 
 - State the applicable trigger and resulting level in the cell or linked narrative, including delay and affected lighting where established.
 - Qualify percentages: power remaining, power reduction, light output, or a switched lighting group. Preserve the source meaning; do not assume these bases are interchangeable. For example, “Partial off — reduce lighting power to 50% on vacancy” describes a resulting power level.
 - **None** means an explicitly established absence of light-reduction behavior. Missing or unresolved information remains **Unknown / pending review**, never defaulted to None.
 - Keep source, proposed and adopted values distinguishable and preserve their evidence/decision references. A shorthand value does not by itself establish a code requirement, dimming hardware capability or final shutoff method. Retain occupancy and time-switch functions separately.
+
+In each assigned-room row, show how the actual documented/proposed implementation achieves the stated light-reduction behavior, including known device/group quantities and settings; do not merely duplicate the sequence requirement.
 
 This is a required project narrative-data header. Existing linked project review records carry it until a versioned structured narrative contract is implemented.
 
