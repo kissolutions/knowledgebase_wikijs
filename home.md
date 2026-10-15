@@ -324,3 +324,8 @@ These pages govern the structure and evolution of the knowledgebase itself.
 ## Lighting Review Entry Point
 
 Use the [Lighting Controls Guidance Index](design-playbooks/lighting-controls-guidance-index.md) to find space definitions, existing playbooks, required review inputs and guidance gaps. It separates vocabulary, selected code requirements, KIS defaults and project-specific source intent.
+
+
+## Class 2 Power and Control Cabling
+
+Shared across lighting, BAS and other power-limited systems: [selection playbook](design-playbooks/class-2-cable-selection.md), [regulatory basis](ontology/reg-and-class/class-2-circuit-cabling.md), and [multi-vendor cable catalog](hardware/cabling/class-2-cable-catalog.md). Belden is the first manufacturer; checked product attributes and pending candidates are distinguished.

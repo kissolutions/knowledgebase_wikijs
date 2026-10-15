@@ -92,3 +92,8 @@ Hardware pages provide the **ground truth** these other sections build upon.
 ## LV Lighting Power and Control
 
 [QDCD](lighting/qdcd.md) · [CIO](lighting/smartdc-cio.md) · [SW4/SW8](lighting/smartdc-sw4-sw8.md) · [EPS PDU](lighting/eps-pdu.md) · [Device allocation playbooks](../design-playbooks/smartdc-allocation-index.md).
+
+
+## Shared Cabling Reference
+
+[Class 2 cable catalog — multiple manufacturers](cabling/class-2-cable-catalog.md) contains product evidence for indoor commercial power/control cable selection, beginning with Belden. Apply the [selection playbook](../design-playbooks/class-2-cable-selection.md) and [regulatory basis](../ontology/reg-and-class/class-2-circuit-cabling.md); catalog inclusion alone is not project approval.

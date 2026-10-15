@@ -51,3 +51,8 @@ Record a separate budget and basis for each side of a converting/controller devi
 Downstream, check the selected fixture interface and wiring arrangement: CV input tolerance and CC driver compliance/headroom require their applicable evidence. Do not transfer a downstream percentage upstream and label it universally required. Preserve both budgets, source/output voltage, actual per-circuit current, route length, conductor resistance basis and unresolved evidence.
 
 The proposed 6% upstream and 3% downstream figures remain unapproved options, not defaults. Paralleled conductors, cable construction, terminal acceptance, protection and bundle/ambient conditions require applicable manufacturer/installation verification before reliance. Do not treat resistance-equivalent gauge as physical conductor size or terminal/listing approval. This doctrine partially defines the review method; it does not close the practical route/drop verification item.
+
+
+## Shared Class 2 Cable Selection
+
+Use the general [Class 2 cable-selection playbook](class-2-cable-selection.md), [regulatory basis](../ontology/reg-and-class/class-2-circuit-cabling.md), and [multi-vendor catalog](../hardware/cabling/class-2-cable-catalog.md). These belong to the shared electrical knowledgebase. Actual feed demand governs; the catalog's six-pair/four-active example does not reinstate a fixed four-feed requirement. Product evidence does not resolve pending voltage-drop budgets, terminal paralleling or installed routing calculations.
