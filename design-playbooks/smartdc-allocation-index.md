@@ -43,3 +43,11 @@ The allocation decision tree starts when a **single fixture exceeds 95 W**. Dimm
 Exterior lighting needs dedicated framework guidance: scope and area/fixture classification, applicable lighting-control/code review and narrative, compatible power/driver selection, outdoor equipment/installation evidence and coordination with the LV implementation workflow. Do not infer an exterior control sequence or equipment suitability from existing interior guidance.
 
 Low-opacity wine/burgundy exterior map fill is an accepted presentation directive, not a completed exterior-lighting design rule. Track implementation and review deliverables in the [LV workflow open item](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/design-playbooks/lv-project-workflow-and-readiness.md#open-framework-item-exterior-lighting).
+
+## Separate Upstream and Downstream Voltage-Drop Budgets
+
+Record a separate budget and basis for each side of a converting/controller device. The upstream review checks actual input voltage under load, input demand including losses/auxiliaries, selected-device operating/conversion limits and required output capability. A wide input range alone does not prove the required output is available throughout that range. Within the verified operating envelope, evaluate efficiency, conductor heating and installation conditions when choosing a budget.
+
+Downstream, check the selected fixture interface and wiring arrangement: CV input tolerance and CC driver compliance/headroom require their applicable evidence. Do not transfer a downstream percentage upstream and label it universally required. Preserve both budgets, source/output voltage, actual per-circuit current, route length, conductor resistance basis and unresolved evidence.
+
+The proposed 6% upstream and 3% downstream figures remain unapproved options, not defaults. Paralleled conductors, cable construction, terminal acceptance, protection and bundle/ambient conditions require applicable manufacturer/installation verification before reliance. Do not treat resistance-equivalent gauge as physical conductor size or terminal/listing approval. This doctrine partially defines the review method; it does not close the practical route/drop verification item.
