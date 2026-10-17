@@ -124,3 +124,10 @@ Domain M1/M2/M3/M4/M5/M6 nomenclature and printable milestone packages do not ch
 ## 9. Stewardship
 
 Shared vocabulary and process contracts belong here; domain engineering details belong in domain extensions and device/application facts in their established knowledgebase sections. New generic concepts are proposed upstream, tested with real work and versioned. The architecture is an intentionally minimal starting point subject to evidence-driven refinement.
+
+
+## Informative illustrations and training aids
+
+Explanatory diagrams and worked examples are **informative, non-normative** aids, analogous to NEC Handbook explanatory illustrations. The normative process, schema, governing code and owner-approved engineering record control in case of inconsistency. Keep figures linked to their governing definitions and review figures when those definitions change.
+
+The shared [Engineering Illustrations index](../assets/illustrations/README.md) currently includes [Space Boundary Markup](../assets/illustrations/space-boundary-markup-example.svg) and [Clockwise Light Identification](../assets/illustrations/light-ids-clockwise-room-example.svg). These may illustrate domain examples without transferring ownership of shared concepts into any one domain.
