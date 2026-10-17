@@ -10,13 +10,15 @@ Illustrations in this directory are **non-normative** engineering education and 
 
 **Related guidance:** [LV Architectural Space Intake](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/design-playbooks/architectural-space-intake.md) and KIS [Physical Boundary Intake](../../design-playbooks/physical-boundary-intake-v0.1.md). The illustrated Space polygon is not itself a Physical Boundary Register entry.
 
-## Clockwise Light Object IDs
+## Historical Clockwise Fixture ID Example — Superseded
 
-![Light numbering by type within Room 105](light-ids-clockwise-room-example.svg)
+> **NOT CURRENT PRACTICE.** The figure below records a prior proposed fixture-type/clockwise numbering method, now superseded for LV Lighting M1 and M2. **Do not use it for new takeoffs, human review labels or training as the active convention.**
 
-**Purpose:** Explain the proposed human-readable `Room–FixtureType–Sequence` convention. Preliminary Light Point Extraction records observed points without assigning final fixture IDs. Later, after Space association and fixture type reconciliation, the system numbers lights of each type clockwise around a room, keeping immutable internal identity and original source references separate from readable labels. Irregular rooms, fixture assemblies and ID stability require the governing domain process; this diagram is not a universal geometric ordering algorithm.
+![Superseded light numbering by type within Room 105](light-ids-clockwise-room-example.svg)
 
-**Related guidance:** KIS [Engineering Architecture Contract](../../governance-and-doctrine/systems-engineering-framework-v1.md) and [LV Lighting workflow](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/design-playbooks/lv-project-workflow-and-readiness.md).
+**Current practice:** M1 establishes owner-approved room-local Light Point labels **top-to-bottom by row, left-to-right within each row**, regardless of fixture type. M2 uses and preserves those labels while reconciling physical fixtures and source schedule types; it does not renumber by type or clockwise ring. Immutable Light Object IDs and source-observation IDs remain separate.
+
+**Governing instructions:** [Phase 1 Intake Process Map](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/design-playbooks/phase-1-intake-process-map-v0.1.md) and [M2 Approved Light Point Identity and Fixture Scheduling](https://github.com/kissolutions/lv-lighting-design/blob/main/docs/design-playbooks/m2-fixture-numbering.md). The historical illustration is retained to document the superseded proposal and must be replaced for active training use.
 
 ## Maintenance conventions
 
