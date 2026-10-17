@@ -401,3 +401,27 @@ The KIS Knowledge System consists of:
 - Governance rules that preserve consistency  
 
 This framework transforms documentation into a structured engineering decision system.
+---
+
+# VIII. KIS Systems Engineering Framework v1.0 Vocabulary
+
+The authoritative cross-domain architecture contract is [KIS Systems Engineering Framework v1.0](systems-engineering-framework-v1.md). Terms below supplement existing definitions without forcing domain model migrations.
+
+- **Phase:** High-level KIS lifecycle grouping: Intake; Design Basis & Requirements; Design Development; Coordination & Delivery; Verification & Closeout.
+- **Process:** Reusable, named and independently versioned engineering operation callable from multiple phases or milestones. A process execution identifies the version and inputs actually used.
+- **Milestone / Review Gate:** Domain-defined checkpoint with named review evidence and criteria; M1/M2 nomenclature is preserved.
+- **Work Product:** Named engineering output such as a schedule, drawing, register or narrative, associated with the relevant milestone package.
+- **System of Interest (SoI):** The system or portion under design/review. Context, boundary and interfaces distinguish surrounding related entities from the contractor's scope.
+- **Need:** Desired stakeholder outcome; distinct from a technical Requirement.
+- **Engineering Evidence & Requirements Registry:** Logical register of typed Needs, Facts, Requirements, Constraints, Criteria, Assumptions, Decisions and Findings with source, applicability, status and traceability.
+- **Verification:** Check against specified requirements or criteria; distinct from **Validation**, which checks intended stakeholder use.
+- **Engineering Acceptance:** Human preservation directive for selected derived configurations or decisions; protects from silent reconfiguration and does not imply compliance.
+- **Snapshot:** Immutable captured engineering state without automatic approval.
+- **Configuration Baseline:** Human-designated snapshot retained as a comparison/recovery reference, without automatically accepting all included records.
+- **Design Baseline:** Preferred default design pattern; this clarifies the original glossary definition of 'Baseline'.
+- **Derived View:** Generated, non-authoritative representation of project registers (e.g., Scope Navigator, Scope Infographic, lighting schedule presentation).
+- **Process Tailoring:** Risk- and complexity-appropriate adjustment of execution/review effort while retaining the process's stated invariants.
+
+**Code precedence clarification:** The historical shorthand 'Most Stringent Governs' is not a universal resolution rule. Confirm enforceable applicability, adopted editions/amendments, exceptions, contractual priority and conflicts before selecting a governing requirement.
+
+**Deferred:** Formal trade studies, quantitative risk metrics, measures of effectiveness/performance, full allocation hierarchy, formal interface-control documents, and SysML/MBSE are not universal requirements of v1.0.
