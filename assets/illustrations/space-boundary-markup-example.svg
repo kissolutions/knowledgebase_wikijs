@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 670" role="img" aria-label="M1 Space polygon, inward offset from walls with room luminaires inside">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#152638}.head{font-size:28px;font-weight:700}.label{font-size:18px;font-weight:600}.small{font-size:15px}.sub{font-size:16px;fill:#3f5b70}.foot{font-size:14px;fill:#526573}.call{fill:#eef7ff;stroke:#2474b5;stroke-width:1.5}.wall{fill:#8b969e;stroke:#34414a;stroke-width:3}</style>
+<rect width="1000" height="670" fill="#fff"/>
+<text x="44" y="51" class="head">Space Boundary Markup — Interior Wall Reference</text>
+<path class="wall" fill-rule="evenodd" d="M185 116 H713 V216 H875 V528 H185 Z M207 139 V505 H851 V240 H690 V139 Z"/>
+<path d="M470 505 H574" stroke="#fff" stroke-width="25"/>
+<path d="M470 520 V474 M574 520 V474" stroke="#34414a" stroke-width="4"/>
+<path d="M474 504 A90 90 0 0 1 564 414" fill="none" stroke="#34414a" stroke-width="2.5"/>
+<path d="M474 504 V414" fill="none" stroke="#34414a" stroke-width="2.5"/>
+<path d="M227 159 H670 V260 H831 V486 H227 Z" fill="#c8e7fb" fill-opacity=".19" stroke="#227fe6" stroke-width="4"/>
+<g fill="#227fe6" stroke="#fff" stroke-width="2">
+<circle cx="227" cy="159" r="7"/><circle cx="670" cy="159" r="7"/><circle cx="670" cy="260" r="7"/><circle cx="831" cy="260" r="7"/><circle cx="831" cy="486" r="7"/><circle cx="227" cy="486" r="7"/>
+</g>
+<path d="M218 148 H679 V251 H842 V497 H218 Z" fill="none" stroke="#8f9ba3" stroke-width="2" stroke-dasharray="10 7"/>
+<g><rect x="296" y="211" width="68" height="34" fill="#fff1a9" stroke="#5d6770" stroke-width="2"/><path d="M320 228h20 M330 218v20" stroke="#9da39a" stroke-width="1.5"/></g><g><rect x="503" y="211" width="68" height="34" fill="#fff1a9" stroke="#5d6770" stroke-width="2"/><path d="M527 228h20 M537 218v20" stroke="#9da39a" stroke-width="1.5"/></g><g><rect x="297" y="328" width="68" height="34" fill="#fff1a9" stroke="#5d6770" stroke-width="2"/><path d="M321 345h20 M331 335v20" stroke="#9da39a" stroke-width="1.5"/></g><g><rect x="504" y="328" width="68" height="34" fill="#fff1a9" stroke="#5d6770" stroke-width="2"/><path d="M528 345h20 M538 335v20" stroke="#9da39a" stroke-width="1.5"/></g><g><rect x="713" y="336" width="68" height="34" fill="#fff1a9" stroke="#5d6770" stroke-width="2"/><path d="M737 353h20 M747 343v20" stroke="#9da39a" stroke-width="1.5"/></g><g><rect x="700" y="424" width="68" height="34" fill="#fff1a9" stroke="#5d6770" stroke-width="2"/><path d="M724 441h20 M734 431v20" stroke="#9da39a" stroke-width="1.5"/></g>
+<g><rect class="call" x="18" y="93" width="250" height="55" rx="5"/><text x="33" y="127" class="label">Architectural wall</text><path d="M268 121 L301 116" stroke="#314653" stroke-width="2.5" fill="none"/></g>
+<g><rect class="call" x="15" y="282" width="195" height="74" rx="5"/><text x="30" y="311" class="label">Editable space</text><text x="30" y="334" class="label">polygon</text><path d="M210 314 L227 320" stroke="#2474b5" stroke-width="2.5"/></g>
+<g><rect class="call" x="690" y="80" width="292" height="53" rx="5"/><text x="703" y="111" class="label">Small inward visual buffer</text><path d="M752 134 L705 163 L684 163" stroke="#2474b5" stroke-width="2" fill="none"/></g>
+<g><rect x="382" y="298" width="275" height="55" rx="5" fill="#fff5d6" stroke="#bd871d" stroke-width="2"/><text x="397" y="321" class="label">Keep light points within</text><text x="397" y="343" class="label">their assigned Space</text><path d="M395 298 L344 245 M646 352 L718 359" stroke="#bd871d" stroke-width="2.5"/></g>
+<g><rect class="call" x="333" y="557" width="345" height="52" rx="5"/><text x="350" y="589" class="label">Bridge ordinary door openings</text><path d="M519 555 V511" stroke="#2474b5" stroke-width="2.5"/></g>
+<text x="500" y="640" class="foot" text-anchor="middle">INFORMATIVE — conceptual example; governing process text controls. Not an area takeoff.</text>
+</svg>
