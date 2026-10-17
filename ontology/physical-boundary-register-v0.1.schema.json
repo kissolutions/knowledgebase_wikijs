@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kissolutions/knowledgebase_wikijs/blob/main/ontology/physical-boundary-register-v0.1.schema.json",
+  "title": "KIS Physical Boundary Register v0.1 (derived interchange)",
+  "description": "Schema for structural validation; canonical project spreadsheet remains authoritative.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "boundaries"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "project_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "code_basis_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/boundary"
+      }
+    }
+  },
+  "$defs": {
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "boundary_id",
+        "description",
+        "boundary_type",
+        "code_classifications",
+        "classification_state",
+        "rating_state",
+        "smoke_barrier_status",
+        "smoke_partition_status",
+        "scope_disposition",
+        "review_state"
+      ],
+      "properties": {
+        "boundary_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "boundary_type": {
+          "enum": [
+            "wall",
+            "floor",
+            "ceiling",
+            "roof",
+            "shaft_enclosure",
+            "other",
+            "unknown"
+          ]
+        },
+        "code_classifications": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "fire_wall",
+              "fire_barrier",
+              "fire_partition",
+              "smoke_barrier",
+              "smoke_partition",
+              "horizontal_assembly",
+              "exterior_wall",
+              "other"
+            ]
+          }
+        },
+        "classification_state": {
+          "enum": [
+            "unreviewed",
+            "source_observed",
+            "verified",
+            "unresolved",
+            "not_applicable"
+          ]
+        },
+        "fire_resistance_minutes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "rating_state": {
+          "enum": [
+            "unknown",
+            "stated",
+            "verified",
+            "not_rated",
+            "conflict"
+          ]
+        },
+        "smoke_barrier_status": {
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        "smoke_partition_status": {
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        "adjacent_space_a_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "adjacent_space_b_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "side_a_context": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "side_b_context": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "level_location": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geometry_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "code_basis_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scope_disposition": {
+          "enum": [
+            "in_scope",
+            "interface_only",
+            "adjacent_context",
+            "excluded",
+            "unresolved"
+          ]
+        },
+        "review_state": {
+          "enum": [
+            "provisional",
+            "reviewed",
+            "accepted",
+            "superseded"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "open_item_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "related_boundary_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "rating_state": {
+                "const": "not_rated"
+              }
+            },
+            "required": [
+              "rating_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "fire_resistance_minutes": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "classification_state": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "classification_state"
+            ]
+          },
+          "then": {
+            "required": [
+              "source_reference"
+            ],
+            "properties": {
+              "source_reference": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
