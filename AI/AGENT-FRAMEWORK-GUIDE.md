@@ -58,3 +58,12 @@ Extension page types declare a parent type from this table; treat them with the 
 - Start from the matching template; keep its section order and metadata.
 - Put content on the page type whose question it answers. If it fits none, it probably belongs on a constraint-synthesis page until proven otherwise.
 - Do not modify framework pages to make a domain task easier; propose a framework change instead (see [Framework Extension Doctrine](/governance-and-doctrine/framework-extension-doctrine)).
+
+## 7. Project Engineering State and Milestones
+
+- An agent's derived result is provisional until accepted; explicit milestone bulk acceptance promotes eligible attributes to canonical state. Preserve the approval record and exceptions.
+- Do not silently redesign accepted project values on future runs; changes to sources or assumptions trigger targeted revalidation and controlled reopening.
+- During an unaccepted milestone, maintain only `current/` plus one recoverable `previous/` working snapshot. Checkpoint before substantial recalculation, bulk transformation, or optimization. Acceptance creates a separate immutable baseline.
+- Project cold-storage packages must declare schema versions, framework commit IDs, evidence, accepted baselines, open exceptions, and integrity hashes. Preserve issued packages and do not overwrite them during migration.
+
+Governing documents: [Engineering State and Acceptance](/governance-and-doctrine/engineering-state-and-acceptance), [Working-State Versioning](/governance-and-doctrine/working-state-versioning), [Project Engineering Package Standard](/governance-and-doctrine/project-engineering-package-standard).
