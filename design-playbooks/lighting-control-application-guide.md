@@ -33,6 +33,8 @@ The [edition-specific IECC draft](iecc-occupant-sensor-directives.md) retains it
 
 The [lighting guidance index](lighting-controls-guidance-index.md) links room definitions and existing playbooks. Manufacturer facts stay on their shared device pages. Extensions such as LV lighting select compatible implementations and narrow device/configuration choices; they do not weaken code requirements or replace source control intent without approval. The implementation row below is an interface for extension examples, not general LV product-selection authority here.
 
+**Standard sequence source:** Use the [KIS Standard Lighting Control Sequences Registry](lighting-control-standard-sequences.md) for all framework-owned `SEQ-###` definitions. A reserved/draft SEQ slot is not an approved recipe. Project-authored controls sequences use project-scoped identities such as `PSEQ-###`; matching, owner approval, and endpoint-zone assignment follow the registry. Parent zones never receive a SEQ.
+
 ## Required Contents of a Room Example
 
 | Part | Required information |
