@@ -23,6 +23,8 @@ related_pages:
 
 # Lighting Control Application Guide
 
+**Reusable subzone illustration and process:** [Subzone Detection and Extraction v0.1](lighting-subzone-detection-extraction-v0.1.md) defines evidence flags, confidence, bidirectional geometry/fixture discovery, CSV-only owner edits and rerun after late daylight evidence. The reusable [Lighting Subzone SVG](../assets/diagrams/lighting-subzones-example.svg) illustrates additive lowercase a/b labels beside unchanged Light Point marks; reuse this source graphic in application-guide examples. Review actual MEP control intent and applicable daylight/code criteria before treating any illustrative grouping as a design prescription.
+
 ## Authority and Role in the Electrical Workflow
 
 WikiJS owns the general lighting application guide, room/code analysis, sensor/switch/controller selection/configuration and decision trees. This migrated draft preserves proposed guide structure; the example families below are not approved control recipes. Moving the page does not validate legacy statements or complete missing room guidance.
