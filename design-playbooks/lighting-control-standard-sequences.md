@@ -42,6 +42,8 @@ These numbers are **reserved KIS standard library slots** informed by the curren
 
 **Do not auto-assign the draft slots.** The descriptions above are placeholders for authored, verified narrative/function contracts. Numeric requirements, permitted full-ON behaviors, group sizes, timings, exceptions, daylight and emergency interactions depend on the selected and verified code basis. The same ID must not be repurposed for fundamentally different behavior once approved.
 
+**Dimming scheme is a mandatory function for a fully authored sequence:** `continuous`, `stepped`, or `none`; unresolved `unknown` blocks approval. For `stepped`, define the required number of steps (and specific levels when established). This is the required *behavior* and **not** a fixture's TRIAC/0–10 V/DALI dimming interface. See [Dimming Vocabulary v0.1](../ontology/lighting-dimming-vocabulary-v0.1.md).
+
 ## Required content for each approved SEQ definition
 
 - **Identity:** `sequence_id`, stable revision, title, owner, status and adoption history.
