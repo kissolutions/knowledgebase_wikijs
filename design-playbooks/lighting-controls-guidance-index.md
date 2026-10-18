@@ -40,6 +40,8 @@ For an existing MEP design, extract its documented scheme before using these pag
 
 Use the [room classification and controls review playbook](room-classification-and-controls-review-playbook.md) for proposed synonym mappings, owner confirmation, source-function completeness, scoped permission to fill gaps and primary-source fallback when guidance is unfinished. The [application-guide draft](lighting-control-application-guide.md) and [IECC draft profiles](iecc-occupant-sensor-directives.md) are now owned here; their verification gaps remain open.
 
+**Sequence matching:** Refer to the [standard SEQ registry](lighting-control-standard-sequences.md). Framework `SEQ-###` IDs designate managed standard sequences (only approved revisions are selectable); project customs use project-scoped IDs. Match reviewed room/building/energy-code context and required functions before proposing assignments to endpoint zones.
+
 ## 2. Detail
 
 ### Required Review Inputs
