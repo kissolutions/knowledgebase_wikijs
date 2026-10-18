@@ -24,6 +24,8 @@ related_pages:
 
 # Room Classification and Lighting Controls Review — Design Playbook
 
+**M3 process instantiation:** Follow [M3 Lighting Controls Sequence Lifecycle v0.1](m3-lighting-sequence-lifecycle-v0.1.md) and the shared [Sequence Assignment Contract v0.1](../ontology/lighting-sequence-assignment-contract-v0.1.md). Approved framework `SEQ-###` and project-owned `PSEQ-###` are matched/authorized **after** reviewed classification and code/source requirements. Only leaf endpoint zones receive sequence assignments; M3 owner acceptance and downstream physical M4 details remain separate.
+
 ## 1. Purpose and Use
 
 Use this workflow to classify rooms, review an existing lighting-control scheme and develop a proposed narrative when the source scheme is missing or incomplete. WikiJS owns the general electrical classification, code analysis and controls guidance. Project extensions own source intake, project records and system-specific implementation. Keep real project facts and approvals outside the knowledge repositories.
