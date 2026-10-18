@@ -42,6 +42,8 @@ Use the [room classification and controls review playbook](room-classification-a
 
 **Sequence matching:** Refer to the [standard SEQ registry](lighting-control-standard-sequences.md). Framework `SEQ-###` IDs designate managed standard sequences (only approved revisions are selectable); project customs use project-scoped IDs. Match reviewed room/building/energy-code context and required functions before proposing assignments to endpoint zones.
 
+**Code-driven SEQ validation:** [Independent IECC 2021/2024 Validation Process v0.1](sequence-validation-process-v0.1.md) and its [external starter rules](rules/iecc-lighting-sequence-validation-v0.1.json) are the required post-selection checks. This versioned validation process can be re-run against existing design assignments after AHJ/code-edition or daylight changes without changing sequence identity or canonical schema. Unreviewed provisions remain findings, not assumed compliance.
+
 ## 2. Detail
 
 ### Required Review Inputs
