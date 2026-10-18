@@ -406,6 +406,93 @@
         "https://cdn.currentlighting.com/image/upload/v1750699370/Site/applicationguide/NX_IECC_ApplicationGuide.pdf"
       ],
       "notes": "2024 precise daylight low-end, thresholds, orientation/independence and exceptions need primary-text verification; intentionally not asserting a numeric low-end."
+    },
+    {
+      "id": "IECC21-SPECIFIC-TASK-DISPLAY",
+      "edition": "2021",
+      "section": "C405.2.5, specific application controls",
+      "verification": "primary_text_reviewed",
+      "applies": {
+        "specific_application_types": [
+          "additional_lighting_power",
+          "display_accent",
+          "display_case",
+          "supplemental_task_under_cabinet",
+          "supplemental_task_under_shelf",
+          "supplemental_task_other",
+          "lighting_sales_demonstration",
+          "gallery_exhibit_display"
+        ],
+        "special_application": true
+      },
+      "requirements": [
+        {
+          "key": "separate_from_general_lighting",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "manual_control_available",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "automatic_shutoff_method",
+          "op": "one_of",
+          "value": [
+            "occupant_sensor",
+            "time_switch"
+          ]
+        }
+      ],
+      "source_urls": [
+        "https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency"
+      ],
+      "notes": "For qualifying supplemental task (including permanently installed under-shelf/under-cabinet), display/accent/case, additional-power and lighting demonstration luminaires, independent manual control PLUS occupant-sensor or time-switch automatic shutoff. Do not treat manual-only as sufficient. Type is per-light group/endpoint, not inferred from Space type. Verify source, exceptions, adopted local amendments and whether luminaire is actually permanently installed; other C405.2.5 categories (sleeping units, plant-growth/food-warming, medical task) require separate rules."
+    },
+    {
+      "id": "IECC24-SPECIFIC-TASK-DISPLAY",
+      "edition": "2024",
+      "section": "C405.2.5, specific application controls",
+      "verification": "secondary_corroborated_needs_primary",
+      "applies": {
+        "specific_application_types": [
+          "additional_lighting_power",
+          "display_accent",
+          "display_case",
+          "supplemental_task_under_cabinet",
+          "supplemental_task_under_shelf",
+          "supplemental_task_other",
+          "lighting_sales_demonstration",
+          "gallery_exhibit_display"
+        ],
+        "special_application": true
+      },
+      "requirements": [
+        {
+          "key": "separate_from_general_lighting",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "manual_control_available",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "automatic_shutoff_method",
+          "op": "one_of",
+          "value": [
+            "occupant_sensor",
+            "time_switch"
+          ]
+        }
+      ],
+      "source_urls": [
+        "https://www.clarkcountynv.gov/adobe/assets/urn%3Aaaid%3Aaem%3A201d0e0f-6fbf-4854-aced-1b1a4848e312/original/as/2024-IECC-Code-Amendments---Clark-County.pdf",
+        "https://assets.lutron.com/a/documents/3672755_iecc_2024_application_summary.pdf"
+      ],
+      "notes": "For qualifying supplemental task (including permanently installed under-shelf/under-cabinet), display/accent/case, additional-power and lighting demonstration luminaires, independent manual control PLUS occupant-sensor or time-switch automatic shutoff. Do not treat manual-only as sufficient. Type is per-light group/endpoint, not inferred from Space type. Verify source, exceptions, adopted local amendments and whether luminaire is actually permanently installed; other C405.2.5 categories (sleeping units, plant-growth/food-warming, medical task) require separate rules."
     }
   ]
 }
