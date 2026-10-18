@@ -30,33 +30,32 @@ This lifecycle instantiates the shared KIS phase/process/milestone distinctions.
 
 ```mermaid
 flowchart TD
- A["M1/M2 verified Spaces, Light Points, MEP evidence"] --> B["PROC-M3-CLASSIFY: candidate room/building/energy classifications"]
- B --> C{"Owner confirms applicable classifications?"}
- C -- No --> B
- C -- Yes --> D["PROC-M3-REQUIREMENTS: adopted code, exact requirements, exceptions"]
- D --> S["PROC-M3-SOURCE-READINESS: electrical lighting plan available?"]
+ A["M1/M2 verified Spaces, Light Points, MEP evidence"] --> B["Pass A: Reviewed Space classification and applicable requirements"]
+ B --> S["PROC-M3-SOURCE-READINESS: electrical lighting plan available?"]
  S --> T{"Plan available?"}
- T -- "No / unverified" --> U["Request owner upload; flag affected M3 source work"]
+ T -- No --> U["Request owner upload; flag affected source-intent work"]
  U --> S
- T -- Yes --> E["PROC-M3-SOURCE-CONTROLS: extract & compare MEP controls by function"]
- E --> F{"Complete supported source intent? / Changes authorized?"}
- F -- Unknown or gap --> G["Record findings; obtain scoped authorization or owner direction"]
- G --> H["PROC-M3-SEQ-MATCH: approved standard library"]
- F -- Source scheme acceptable --> H
- H --> I{"Approved SEQ matches and respects source intent?"}
- I -- Yes --> J["Propose SEQ-### revision"]
- I -- No --> K["PROC-M3-SEQ-AUTHOR: propose PSEQ-### with owner direction"]
- J --> L["PROC-M3-SEQ-VERIFY: required functions, options, source consistency"]
- K --> L
- L --> M{"Verifiable and approved interpretation?"}
- M -- No --> H
- M -- Yes --> N["PROC-M3-ZONE-ASSIGN: parent/leaf structure; SEQ on leaves only"]
- N --> O["PROC-M3-CROSS-REFERENCE: every Space, daylight determination, Light Points"]
- O --> P["One sequence narrative per ID/revision + associated rooms/leaves"]
- P --> Q{"M3 owner review and acceptance gate"}
- Q -- Rework --> B
- Q -- Accepted scoped direction --> R["M3 locked review; deferred details to M4/M5"]
+ T -- Yes --> E["Pass B1: detect source control cues SZ-01..SZ-07 and code/daylight requirements"]
+ E --> F{"Any active subzone flag or incomplete screen?"}
+ F -- No --> G["Single-zone candidate (no detailed CSV)"]
+ F -- Yes --> H["Pass B2: discover groups by boundary OR light/symbol evidence"]
+ H --> I["Assign every Light Point or scratch Unzoned; create lowercase a,b,c labels"]
+ I --> J["CSV review + derived PDF label overlay"]
+ J --> K{"Owner accepted, Unzoned empty?"}
+ K -- No --> L["Import CSV corrections; rebuild affected review only"]
+ L --> H
+ K -- Yes --> M["Accepted functional endpoint hierarchy"]
+ G --> N["Pass C: SEQ/PSEQ match per endpoint"]
+ M --> N
+ N --> O["SEQ verification, all-Space and daylight cross-reference"]
+ O --> P{"Owner adopts sequence/narrative?"}
+ P -- Rework --> N
+ P -- Yes --> Q["M3 lock; M4 physical outputs and devices"]
+ D["New daylight/code/source evidence at ANY time"] --> H
+ D --> E
 ```
+
+**Reusable sub-process:** [Lighting Subzone Detection and Extraction v0.1](lighting-subzone-detection-extraction-v0.1.md). Both geometry/requirements-first and fixture/switch-first discovery feed the same owner-reviewed CSV and zone hierarchy; no order dependency. A late daylight area reopens only affected Spaces and invalidates affected sequence assignments until re-verification. Unknown/Unzoned fixture membership must **never** enter an accepted endpoint sequence.
 
 ## Stable M3 processes and work products
 
@@ -64,11 +63,11 @@ flowchart TD
 |---|---|---|
 | `PROC-M3-CLASSIFY v0.1` | Architectural facts, actual use, occupied level, M1 Space register | Candidate **independent** Building Code Space Type, Building Code Occupancy Group, and Energy Code Space Type; owner confirmation or unknown |
 | `PROC-M3-REQUIREMENTS v0.1` | Reviewed classifications, selected code edition/path/jurisdiction, amendments, area/enclosure, daylight evidence | Applicable requirements and exceptions matrix with exact source locators; unknown applicability remains open |
-| `PROC-M3-SOURCE-CONTROLS v0.1` | M2 drawings, notes, symbols, schedules, existing sequences | By-function source observations and compliant/deficient/ambiguous/no-information/not-reviewed findings; never overwrite source intent |
+| `PROC-M3-SUBZONE-DETECT v0.1` | Reviewed Space, source plan and code/daylight evidence | SZ-01..SZ-07 evidence flags, confidence report below HIGH and single-zone fast-path eligibility |\n| `PROC-M3-SUBZONE-EXTRACT v0.1` | Flagged Spaces, Light Points, daylight areas | Iterative CSV owner review, scratch Unzoned exclusion, additive PDF labels and accepted parent/leaf structure |\n| `PROC-M3-SOURCE-CONTROLS v0.1` | M2 drawings, notes, symbols, schedules, existing sequences | By-function source observations and compliant/deficient/ambiguous/no-information/not-reviewed findings; never overwrite source intent |
 | `PROC-M3-SEQ-MATCH v0.1` | Requirements, documented source functions, code profile, approved [SEQ Registry](lighting-control-standard-sequences.md) | Ranked candidates with applicability, revision, verified coverage and conflicts; never auto-select reserved draft entries |
 | `PROC-M3-SEQ-AUTHOR v0.1` | Missing fit and explicit owner scope/authorization | Project-owned `PSEQ-###` narrative draft, parameters, evidence and unresolved issues; no silent promotion to standard |
 | `PROC-M3-SEQ-VERIFY v0.1` | Proposed SEQ/PSEQ, adopted source, requirements | Per-function behavioral and code-applicability comparison, source-intent conflict finding, documented limitations |
-| `PROC-M3-ZONE-ASSIGN v0.1` | Reviewed sequence and necessary functional subdivisions | Proposed endpoint/leaf zone assignments with exact sequence ID + revision and any parameter/owner overrides. **Parents have no assigned SEQ.** |
+| `PROC-M3-ZONE-ASSIGN v0.1` | Accepted or reviewed functional endpoint structure from B2 | Sequence assignment to each endpoint/leaf with exact ID + revision and any parameters/owner overrides. **Never assign SEQ before zone membership reconciliation; parents have none.** |
 | `PROC-M3-CROSS-REFERENCE v0.1` | Spaces, Light Points, proposed zones/sequences, daylight determinations | All-Space narrative/fixture coverage review, lightless/service exceptions, missing-direction findings, M4/M5 deferrals |
 
 A process may repeat for a subset of the project; do not multiply owner approval requests for each internal iteration. Confirming classification, authorizing gap filling, accepting an interpretation, and adopting a sequence are **distinct** owner decisions. Use one consolidated M3 review package after incremental issue resolution.
