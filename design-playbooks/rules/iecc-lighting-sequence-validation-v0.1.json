@@ -355,8 +355,7 @@
           "healthcare_nursery",
           "nurses_station"
         ],
-        "special_application": false,
-        "high_end_trim_exception": false
+        "special_application": false
       },
       "requirements": [
         {
@@ -379,7 +378,7 @@
         "https://assets.lutron.com/a/documents/3672755_iecc_2024_application_summary.pdf",
         "https://cdn.currentlighting.com/image/upload/v1750699370/Site/applicationguide/NX_IECC_ApplicationGuide.pdf"
       ],
-      "notes": "Manual dimming high-end-trim exception and code-prescribed room applicability must be reviewed; this candidate cannot be labeled code-certified from manufacturer corroboration alone."
+      "notes": "Continuous dimming performance to 10% + OFF is distinct from the high-end-trim exception to a manual dimmer. Manual-control method requires a separately verified exception branch. Secondary guide corroboration only; final model-code wording and local exceptions require review."
     },
     {
       "id": "IECC24-DAYLIGHT",
