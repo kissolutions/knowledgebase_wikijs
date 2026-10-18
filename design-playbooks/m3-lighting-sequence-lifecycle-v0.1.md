@@ -14,6 +14,18 @@ editor: markdown
 **Phase 2 — Design Basis & Requirements; Milestone M3 — Controls Narrative and Sequence Assignment.**
 This lifecycle instantiates the shared KIS phase/process/milestone distinctions. It is a design-basis review cycle, not automatic approval of new control design or a requirement to implement physical sensor placements at M3.
 
+## M3 source document readiness — required before functional zone discovery
+
+**PROC-M3-SOURCE-READINESS v0.1** checks the project source register and currently available drawings **before extracting/reconciling original MEP control groups and functional subzones**.
+
+1. **Electrical lighting plan availability**: `available`, `missing`, or `unverified`. Record document ID, drawing sheet(s), revision and source location when available. If missing/unverified, request that the owner upload the applicable electrical lighting plan; retain a `source_document_missing` finding until addressed. Do not claim MEP circuit/switch intent was reviewed without it. This is a targeted owner request, not a reason to stop unrelated classification or M1/M2 intake.
+2. **Controls-evidence completeness** (independent status): `not_reviewed`, `complete`, `partial`, or `ambiguous`. A present plan passes the **availability** gate even when control details are incomplete; inspect fixture switching letters/group notation, circuit/home-run markings, wall-switch/dimmer symbols and tags, sensor/control legends, keyed notes, schedules and referenced details to determine source intent. An electrical branch circuit is **not automatically** one independently switched/dimmed lighting group.
+3. **Related documents**: Check fixture schedule, architectural/accepted room footprint evidence, window/glazing/elevation data as required by daylight-zone geometric derivation, and referenced controls specifications/details. Request a missing source **only if needed to resolve a specific requirement**; do not require a full architectural package where an accepted room register and electrical lighting plan supply sufficient evidence.
+4. **Current single-plan scenario**: When the owner provides **only the electrical lighting plan**, mark `lighting_plan_available=available` and move to evidence extraction. Preserve unresolved fixture-schedule, circuiting, switch/group association, daylight geometry or code-basis questions as targeted findings—**do not hold the availability gate open or invent missing plans**.
+5. **Pass-order**: classified Space/requirements -> source-readiness check -> source controls and daylight/functional-zone discovery -> endpoint sequence matching -> all-Space review/owner lock. If functional zoning cannot be established from the plan, return only the affected zones to source review; no global restart is required.
+
+**Work product:** M3 Source Readiness Record (source ID/revision, `lighting_plan_available`, `source_control_intent_status`, observed symbols/circuit/group evidence, separately missing inputs, owner request and affected-Space/Light Point IDs). It is a review process contract; no unsupported project schema properties are implied.
+
 ## Flow
 
 ```mermaid
