@@ -44,6 +44,8 @@ These numbers are **reserved KIS standard library slots** informed by the curren
 
 **Dimming scheme is a mandatory function for a fully authored sequence:** `continuous`, `stepped`, or `none`; unresolved `unknown` blocks approval. For `stepped`, define the required number of steps (and specific levels when established). This is the required *behavior* and **not** a fixture's TRIAC/0–10 V/DALI dimming interface. See [Dimming Vocabulary v0.1](../ontology/lighting-dimming-vocabulary-v0.1.md).
 
+**Rule-based application validation:** Run [PROC-SEQ-VALIDATE v0.1](sequence-validation-process-v0.1.md) after every selected SEQ/PSEQ build and on demand after code-edition, AHJ, permitting, daylight, or sequence-assignment changes. IECC 2021/2024 requirements live in a **separate versioned rule catalog**, not in `SEQ-###` definitions. A selected code may *propose* missing assignment parameters, but may not silently overwrite owner/source decisions. These rules do not automatically approve reserved SEQ drafts or certify project compliance.
+
 ## Required content for each approved SEQ definition
 
 - **Identity:** `sequence_id`, stable revision, title, owner, status and adoption history.
