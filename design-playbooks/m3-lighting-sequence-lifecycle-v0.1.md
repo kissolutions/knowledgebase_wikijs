@@ -57,6 +57,8 @@ flowchart TD
 
 A process may repeat for a subset of the project; do not multiply owner approval requests for each internal iteration. Confirming classification, authorizing gap filling, accepting an interpretation, and adopting a sequence are **distinct** owner decisions. Use one consolidated M3 review package after incremental issue resolution.
 
+**Sequence dimming semantics:** Each proposed endpoint sequence explicitly declares `dimming_scheme` (`continuous`, `stepped`, `none`, or unresolved `unknown`) and required step count for stepped operation. Keep that behavior separate from the fixture's physical dimming interface; only M4 device selection resolves actual dimmer/controller output compatibility. See the [shared dimming vocabulary](../ontology/lighting-dimming-vocabulary-v0.1.md).
+
 ## Governing constraints
 
 1. **Source vs requirement vs design proposal:** Preserve MEP source intent even when it differs from KIS preference. An existing design cannot be replaced merely because a library sequence looks attractive. Require scoped redesign authority and a separately approved result.
