@@ -39,6 +39,9 @@ These numbers are **reserved KIS standard library slots** informed by the curren
 | `SEQ-005` | Occupancy-based reduction on vacancy | Corridor or other verified reduction applications | **Reserved — draft** |
 | `SEQ-006` | Independent occupancy-zone response with shared aggregate conditions | Open offices requiring independently controlled areas | **Reserved — draft** |
 | `SEQ-007` | Occupancy reduction plus scheduled complete shutoff | Warehouse applications where both functions apply | **Reserved — draft** |
+| `SEQ-008` | Specific-application local manual control **plus** independent automatic shutoff | Qualifying permanent supplemental task, under-shelf/under-cabinet, display/accent and other C405.2.5 applications; occupant-sensor **or** time-switch automatic OFF | **Reserved — draft** |
+
+**SEQ-008 caveat:** Specific-application lighting under IECC C405.2.5 is not satisfied by a local manual switch alone. For qualifying task/display groups it also needs an occupancy-sensor or time-switch shutoff and control separate from the general lighting. Other C405.2.5 applications (such as medical task or plant-growth lighting) may have different functions; do not select SEQ-008 merely because a fixture is called task lighting. This reserved family is not an approved code recipe. Refer to the external [2021/2024 specific-application rules](rules/iecc-lighting-sequence-validation-v0.1.json).
 
 **Do not auto-assign the draft slots.** The descriptions above are placeholders for authored, verified narrative/function contracts. Numeric requirements, permitted full-ON behaviors, group sizes, timings, exceptions, daylight and emergency interactions depend on the selected and verified code basis. The same ID must not be repurposed for fundamentally different behavior once approved.
 
