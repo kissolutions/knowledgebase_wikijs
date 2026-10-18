@@ -34,7 +34,11 @@ flowchart TD
  B --> C{"Owner confirms applicable classifications?"}
  C -- No --> B
  C -- Yes --> D["PROC-M3-REQUIREMENTS: adopted code, exact requirements, exceptions"]
- D --> E["PROC-M3-SOURCE-CONTROLS: extract & compare MEP controls by function"]
+ D --> S["PROC-M3-SOURCE-READINESS: electrical lighting plan available?"]
+ S --> T{"Plan available?"}
+ T -- "No / unverified" --> U["Request owner upload; flag affected M3 source work"]
+ U --> S
+ T -- Yes --> E["PROC-M3-SOURCE-CONTROLS: extract & compare MEP controls by function"]
  E --> F{"Complete supported source intent? / Changes authorized?"}
  F -- Unknown or gap --> G["Record findings; obtain scoped authorization or owner direction"]
  G --> H["PROC-M3-SEQ-MATCH: approved standard library"]
