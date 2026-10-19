@@ -24,7 +24,7 @@ Power distribution unit supplying direct lighting or QDCD power inputs.
 
 ## 2. Capabilities and Variants (What Is Possible)
 
-Owner-provided family information: 8, 16 or 32 Class 2 outputs. Eight-output version cannot be Smart; 16/32 versions can be purchased Smart. Smart provides network management/programming/monitoring. EPS manufacturer specification sheets have not been supplied; output voltage, per-output watts, input/aggregate power, monitoring/control commands, listing and placement ratings require evidence. Nominal 100 W Class 2 project channel profile does not prove a PDU rating.
+Owner-provided family information: 8, 16 or 32 Class 2 outputs. Eight-output version cannot be Smart; 16/32 versions can be purchased Smart. **KIS owner selection policy (2026-10-18): do not specify 8-output EPS PDUs for LV lighting, including controller-only supply**, because remote configuration and SNMP traps are required owner capabilities and unavailable on that variant. Smart provides network management/programming/monitoring. EPS manufacturer specification sheets have not been supplied; output voltage, per-output watts, input/aggregate power, monitoring/control commands, listing and placement ratings require evidence. Nominal 100 W Class 2 project channel profile does not prove a PDU rating.
 
 ## 3. Interfaces and Integration
 
@@ -48,7 +48,7 @@ Not established in the supplied sources.
 
 ## 8. Pitfalls, Assumptions, and Failure Modes
 
-Do not count four QDCD output channels as four PDU allocations automatically. Do not assume 8/16/32 times 100 W is supported aggregate power. Smart preference for controller-only loads and permission for mixed direct/QDCD use remain owner decisions.
+Do not count four QDCD output channels as four PDU allocations automatically. Do not assume 8/16/32 times 100 W is supported aggregate power. The no-8-output restriction applies to controller-only loads as well as direct lighting. Mixed direct/QDCD use remains subject to control compatibility and product verification; owner preference does not establish a manufacturer's actual electrical ratings.
 
 ## 9. Ecosystem and Related Devices
 
@@ -64,7 +64,7 @@ Confirm exact variant, firmware, lead time and accessories with vendor.
 
 ## 12. Selection and Sizing Considerations (Rules of Thumb)
 
-Device constraints feed the linked mini playbook. Geographic and control requirements can increase installed counts above lower bounds.
+Device constraints feed the linked mini playbook. Select only 16/32-output PDUs for KIS LV lighting. Prefer the smallest suitable of those two variants after verifying output and aggregate power capacities, including any approved spare policy. Geographic and control requirements can increase installed counts above lower bounds.
 
 ## 13. Commissioning and Validation Considerations
 
