@@ -28,6 +28,28 @@ Manufacturer evidence: supplied SMARTDC-QuadDCDrive Specification Sheet, revised
 
 Owner describes four independent Class 2 input feeds electrically aggregated; default four PDU outputs to four QDCD inputs. Independent-input routing/reduced-feed support is not established by the supplied sheet. Do not treat owner description as wiring permission.
 
+## 2A. Verified Parallel CC Luminaire Wiring — Manufacturer Drawing, 2025-06-30
+
+**Authoritative equipment-specific evidence:** SmartDC drawing **"QDCD 4CHDR1 WITH STATIC COLOR TEMPERATURE CONSTANT CURRENT LUMINAIRES ON CHANNEL ONE WIRED IN PARALLEL,"** Rev **A2**, dated **06/30/25**, supplied by the owner as `QDCD-4CHDR1-WITH-3-STATIC-CCT-CC-LUMINAIRES-ON-CH-1-PARALLEL.pdf` (1 page). The diagram explicitly depicts three CC luminaires connected as parallel branches to the same QDCD output.
+
+**Manufacturer's stated limits and condition (drawing callout):**
+- **Each luminaire sharing one parallel CC channel must have the same *rated mA*.** It is not sufficient that fixtures share 36 V nominal, their wattages are compatible, or the owner placed them in one cohort.
+- **Total channel current must not exceed 4 A** (sum of parallel branch ratings).
+- **Total channel power must not exceed 100 W**; aggregate QDCD power must not exceed **400 W**.
+- The KIS standard retains a stricter **95 W design maximum** on an ordinary 100 W Class 2 microchannel.
+
+For an output containing multiple CC fixtures, the selected output-current setting is based on the **sum** of individual equally rated branch currents, subject to actual programmable step/range/tolerance. For example, two separately verified 1,139 mA branches require a nominal 2,278 mA total; **this is an arithmetic target, not proof that an exact 2,278 mA setting is available** on a QDCD with approximately 100 mA adjustment steps. The exact programming and allowable current tolerance remain a verification requirement.
+
+**Qualification scope:** This manufacturer's document demonstrates permitted *parallel static-CCT CC topology* with the stated equal-rated-current and power/current constraints. It does not establish:
+- that two *different luminaire types* with coincidentally equal current ratings have the necessary matching current-voltage characteristics or stable branch sharing;
+- permissible rated-mA mismatch/tolerance (do not invent one);
+- load behavior after one branch disconnects, current imbalance, or independently powered emergency/battery modules;
+- whether the published example applies without further qualification to tunable-white or different LED-module technologies.
+
+**Owner topology preference vs equipment permission:** KIS's design policy is parallel electrical connection for every multi-fixture Class 2 output. SmartDC separately publishes **series** examples; those are manufacturer-supported alternatives, not the KIS chosen method. Do not confuse physical daisy-chaining with electrically series-connected LED strings.
+
+**Evidence rules:** For a multi-fixture CC channel, record the fixture's **actual verified rated mA at the remote-driver interface** (using `LightObject.design.input_current_ma` with a traceable actual fixture/LED-module source), do not manufacture that rating solely from `W / V_nominal`. Record the manufacturer parallel drawing's identifier and the fixture compatibility basis. Equal rated mA is a **mandatory gate**, not sufficient final engineering qualification. If rated mA is missing or differs across members, reject the group until a different supported configuration is designed. Emergency/base fixture pairings require additional approval of failover and control behavior, regardless of matching rated mA.
+
 ## 3. Interfaces and Integration
 
 Supplied sheet pp. 3–6: PDnet RJ45 chain to CIO/QDCDs, CAT5e Class 2; topology labels power wiring 48–57 VDC, 18 AWG minimum power/ground pair. This diagram range is distinct from the catalog 24–57 VDC input range. Maximum eight QDCDs per CIO, 250 ft maximum distance from CIO. Luminaire wiring uses manufacturer Table A (1 V drop basis); validate actual current, gauge and route. No direct wired sensor-input capacity is confirmed.
@@ -50,7 +72,7 @@ Not established in the supplied sources.
 
 ## 8. Pitfalls, Assumptions, and Failure Modes
 
-Four lighting outputs do not establish four sensor inputs. Four outputs do not merge four room control zones. Total watts alone do not prove voltage/current compatibility or reduced-feed routing. Casambi limits and CIO/Casambi precedence remain open.
+Four lighting outputs do not establish four sensor inputs. Four outputs do not merge four room control zones. Total watts alone do not prove voltage/current compatibility or reduced-feed routing. **A shared nominal LED voltage does not qualify two different rated-mA CC luminaires for one parallel output.** See the manufacturer's Rev A2 wiring restriction in section 2A. Casambi limits and CIO/Casambi precedence remain open.
 
 ## 9. Ecosystem and Related Devices
 
