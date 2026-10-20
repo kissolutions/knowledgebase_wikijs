@@ -24,6 +24,10 @@ The bas-logic-gen Controls Engineering Playbook assigns points to controller/pan
 | BAC-5902 | [BAC-5902](BAC-5902.md) | Draft — specs pending |
 | BAC-9300 | [BAC-9300](BAC-9300.md) | Draft — specs pending |
 
+## EIO expansion module addressing
+
+- **CAN-5901 (8 input + 8 output) and CAN-5902 (16 input)** — [CAN-5900 series expansion module addressing](CAN-5900-Expansion-Modules.md); includes the controller-side object ranges for EIO addresses 1–4, physical DIP settings, EOL, power and communications requirements verified against KMC guide 925-019-03M page 3 and related pages.
+
 ## Related (bas-logic-gen)
 
 - Controller/Panel I/O Assignment: `design-playbooks/controls-engineering-playbook.md`, Stage 8
