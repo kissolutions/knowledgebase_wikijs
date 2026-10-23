@@ -97,3 +97,12 @@ Hardware pages provide the **ground truth** these other sections build upon.
 ## Shared Cabling Reference
 
 [Class 2 cable catalog — multiple manufacturers](cabling/class-2-cable-catalog.md) contains product evidence for indoor commercial power/control cable selection, beginning with Belden. Apply the [selection playbook](../design-playbooks/class-2-cable-selection.md) and [regulatory basis](../ontology/reg-and-class/class-2-circuit-cabling.md); catalog inclusion alone is not project approval.
+
+## Shared power-monitoring hardware (draft additions)
+
+- [EIG Shark 250 power meter](power-monitoring/eig-shark-250.md) — meter wiring, modular I/O and status-input considerations.
+- [UPS network-management cards](power-monitoring/ups-network-cards.md) — compatibility pending manufacturer verification.
+- [ASCO ATS controllers and auxiliary contacts](power-monitoring/asco-ats-controllers.md) — evidence checklist, no inferred contacts.
+- [Moxa MGate 5105-MB-EIP gateway](gateways/moxa-mgate-5105-mb-eip.md) — **Modbus/EtherNet-IP, not BACnet gateway**.
+
+These shared device references do not select equipment or establish project-specific engineering scope. The broader `Devices/` versus `hardware/` namespace question remains open; existing pages were not relocated.

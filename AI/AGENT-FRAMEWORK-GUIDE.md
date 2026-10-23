@@ -58,3 +58,7 @@ Extension page types declare a parent type from this table; treat them with the 
 - Start from the matching template; keep its section order and metadata.
 - Put content on the page type whose question it answers. If it fits none, it probably belongs on a constraint-synthesis page until proven otherwise.
 - Do not modify framework pages to make a domain task easier; propose a framework change instead (see [Framework Extension Doctrine](/governance-and-doctrine/framework-extension-doctrine)).
+
+## 7. Public-repository data boundary
+
+**This WikiJS source repository and publicly accessible domain extension repositories are reusable engineering knowledge, not project archives.** Never commit client names or client-identifying facilities, IP/MAC addresses, serial numbers, network diagrams, project drawings, contracts, pricing, credentials, private Drive/SharePoint links, photographs or verbatim client communications. Store real project records in its approved private project location. Publish only independently verified generic manufacturer facts, sanitized/anonymized examples and broadly applicable processes. Before committing a workbook or code-generated attachment, run the domain's blank-template or sensitive-data check; examine hidden sheets, cell notes, document metadata, comments and formulas as well as visible cells. If exposure is discovered, stop reuse and remediate both current files and historical public reachability; removing data only from the latest file does not erase repository history.
