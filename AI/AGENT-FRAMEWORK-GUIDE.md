@@ -53,6 +53,8 @@ Extension page types declare a parent type from this table; treat them with the 
 - Preserve traceability: say which page or source document each conclusion came from.
 - Never treat a design page or worked example as a universal standard.
 
+For drawing-derived spatial work, follow [Drawing-Based Spatial Extraction and Verification](../design-playbooks/drawing-spatial-extraction-v0.1.md): AI performs the initial extraction and rendered visual verification before human review. Combine visual meaning/completeness with PDF/coordinate precision; verify both geometric and object correspondence for cross-drawing transfers. On a spatial discrepancy, inspect the rendered area before another corrective data pass. Preserve accepted owner geometry and keep unresolved scope explicit. Domain playbooks own object/counting definitions, markup styles and milestone acceptance.
+
 ## 6. Writing Pages
 
 - Start from the matching template; keep its section order and metadata.

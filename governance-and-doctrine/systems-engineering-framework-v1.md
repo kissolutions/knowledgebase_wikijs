@@ -83,6 +83,8 @@ Support lightweight links: evidence -> fact/need/requirement/constraint -> engin
 - **Milestone acceptance** indicates a defined review gate was met; it is not synonymous with engineering configuration acceptance or construction acceptance.
 - Reports distinguish checks executed, checks unavailable/not reviewed, unresolved findings, responsible reviewer, evidence, and review scope.
 
+**Drawing-derived spatial verification:** Apply [PROC-DRAWING-SPATIAL-EXTRACT v0.1](../design-playbooks/drawing-spatial-extraction-v0.1.md) when extracting drawing objects or transferring their geometry between views. AI-led extraction includes rendered visual completeness checks before owner review, in addition to data/geometry checks. Cross-view transfer requires distributed registration evidence and a separate object/semantic correspondence check. Preserve accepted owner corrections and scope unresolved findings to affected objects/areas; a logged discrepancy does not make that inventory complete. The linked method specifies the lightweight evidence and correction loop without introducing a new registry or domain schema.
+
 ## 5. Acceptance, snapshot, configuration baseline and change control
 
 These are deliberately lightweight, distinct operations:
