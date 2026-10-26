@@ -16,7 +16,7 @@ related_pages:
 
 ## Purpose and Authority
 
-KIS owner directives approved in the 2026-10-05 discussion; manufacturer facts are separately attributed in the product pages. The three supplied SmartDC sheets are project-source evidence, not added to Git. SW and EPS data without dedicated sheets remains owner-provided. Draft guidance can support supervised review, not unqualified construction release.
+KIS owner directives from 2026-10-05 and hardware/architecture clarifications from 2026-10-26; manufacturer facts are separately attributed in the product pages. Supplied project-source sheets remain outside Git; public manufacturer links support reusable product facts. SW4/SW8 signal capacities are now corroborated by the manufacturer page/specification sheet. EPS data without dedicated evidence remains owner-provided. Draft guidance can support supervised review, not unqualified construction release.
 
 | Hardware page | Device mini playbook |
 |---|---|
@@ -28,7 +28,14 @@ LV extension owns project records, sequence, markup and companion topology contr
 
 ## Open Verification Items
 
-Dedicated SW4/SW8 and EPS sheets; SW power/input compatibility/listings/device-count rules; QDCD direct sensor capacity and wired/wireless limits; reduced-feed/internal aggregation; CIO/Casambi precedence; precise bus distance/branch/termination rules; PDU command/API vs SNMP notification behavior; controller-only Smart and mixed PDU policy; practical lamp/feed route and voltage-drop limits; expansion/spare policy. Unknowns block only the dependent conclusion. CIO owner location is required before final routes.
+| Item | Current evidence / action |
+|---|---|
+| `CIO-PORT-FANIN` | CIO has eight direct sensor ports with one aggregated isolated-room scene/group per port. Maximum sensors per port is unknown; possible four remains a question. Obtain supported models, combining/wiring and power limits. |
+| `CIO-QDCD16-FW` | Owner reports 2026 firmware expansion from 8 to 16 QDCDs per CIO. Obtain updated datasheet/release evidence and record installed firmware/applicability; keep this distinct from the already documented 16 SDCnet peripherals. |
+| SW4/SW8 | Input distinction confirmed: four 0–10 V inputs vs eight on/off dry-contact inputs; SW4 also permits dry-contact configuration. Selected sensor electrical compatibility, power, listings and exact installation/addressing rules still need applicable evidence. |
+| QDCD control variants | Integral Casambi is variant-specific. All-Casambi small systems may omit CIO/SW signal hardware; wired sensor paths use their controlling CIO. Verify exact profiles, pairing, power, required features and mixed command precedence. No native QDCD wired input capacity is established. |
+
+Other open items: dedicated EPS evidence; reduced-feed/internal aggregation; precise bus distance/branch/termination rules; PDU command/API vs SNMP notification behavior; controller-only Smart and mixed PDU policy; practical lamp/feed route and voltage-drop limits; expansion/spare policy. Unknowns affect only the dependent conclusion. For a CIO-based design, owner location is required before final routes; a supported all-Casambi option has no invented CIO requirement.
 
 ## Larger-Fixture EPS Power Aggregation
 

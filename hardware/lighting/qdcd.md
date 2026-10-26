@@ -28,6 +28,21 @@ Manufacturer evidence: supplied SMARTDC-QuadDCDrive Specification Sheet, revised
 
 Owner describes four independent Class 2 input feeds electrically aggregated; default four PDU outputs to four QDCD inputs. Independent-input routing/reduced-feed support is not established by the supplied sheet. Do not treat owner description as wiring permission.
 
+### Casambi and non-Casambi variants
+
+| Variant | Control architecture |
+|---|---|
+| QDCD 4CHDR1 BC / explicitly Casambi-enabled selection | Integral Casambi radio; compatible Casambi wireless controls and sensors can communicate with the selected QDCD profile |
+| QDCD 4CHDR1 / non-Casambi selection | No integral Casambi capability is established; do not assign direct Casambi control merely because another QDCD in the project has it |
+
+Manufacturer's [QDCD product page](https://smartdclighting.com/product/quaddcdrive/) identifies the optional integral Casambi radio and separate variant sheets (reviewed 2026-10-26). Record exact ordered model and enabled profile rather than treating every QDCD as wireless.
+
+**Owner application clarification, 2026-10-26:** Casambi-enabled QDCDs support compatible kinetic/self-powered controls, including Casambi-compatible EnOcean devices. They may also participate in a CIO-based arrangement where hardwired sensor signals reach the QDCD through the controlling CIO and its supported inputs/SDCnet peripherals. This does **not** establish native hardwired sensor terminals on a QDCD. Obtain the selected-device/profile pairing and command-precedence configuration; do not assume arbitrary EnOcean radio protocols are Casambi-compatible.
+
+**All-Casambi small-system option:** With Casambi-enabled QDCDs and compatible wireless wall controls plus occupancy/ambient-light sensors, the room control path can operate **without a CIO or SW interface modules** when the approved functions are all supported in that architecture. Externally powered Casambi OCC/ALS sensors are available; their control communication is wireless even though they require power wiring. For example, the [Casambi US ecosystem](https://us.casambi.com/ecosystem/) lists powered occupancy sensors and a 24 VDC external-power daylight sensor. Select/verify actual models, supply and demand; do not infer a common voltage or source of sensor power, or confuse these with kinetic wall controls.
+
+Omitting the CIO does not eliminate QDCD/fixture supply feeds or sensor power. Preserve independent room/daylight functions, coverage, manual-off behavior and any required scheduling, integration or emergency functions; a CIO-free option is an architecture choice, not automatic proof that every required feature exists. A mixed CIO/Casambi system retains explicit associations and unresolved command precedence until configured/tested.
+
 ## 2A. Verified Parallel CC Luminaire Wiring — Manufacturer Drawing, 2025-06-30
 
 **Authoritative equipment-specific evidence:** SmartDC drawing **"QDCD 4CHDR1 WITH STATIC COLOR TEMPERATURE CONSTANT CURRENT LUMINAIRES ON CHANNEL ONE WIRED IN PARALLEL,"** Rev **A2**, dated **06/30/25**, supplied by the owner as `QDCD-4CHDR1-WITH-3-STATIC-CCT-CC-LUMINAIRES-ON-CH-1-PARALLEL.pdf` (1 page). The diagram explicitly depicts three CC luminaires connected as parallel branches to the same QDCD output.
@@ -52,7 +67,7 @@ For an output containing multiple CC fixtures, the selected output-current setti
 
 ## 3. Interfaces and Integration
 
-Supplied sheet pp. 3–6: PDnet RJ45 chain to CIO/QDCDs, CAT5e Class 2; topology labels power wiring 48–57 VDC, 18 AWG minimum power/ground pair. This diagram range is distinct from the catalog 24–57 VDC input range. Maximum eight QDCDs per CIO, 250 ft maximum distance from CIO. Luminaire wiring uses manufacturer Table A (1 V drop basis); validate actual current, gauge and route. No direct wired sensor-input capacity is confirmed.
+Supplied sheet pp. 3–6: PDnet RJ45 chain to CIO/QDCDs, CAT5e Class 2; topology labels power wiring 48–57 VDC, 18 AWG minimum power/ground pair. This diagram range is distinct from the catalog 24–57 VDC input range. The legacy topology shows eight QDCDs per CIO and 250 ft maximum distance from CIO; the [CIO firmware clarification](smartdc-cio.md#firmware-dependent-qdcd-expansion) records owner-reported 2026 expansion to sixteen QDCDs pending updated manufacturer/firmware confirmation. Keep QDCD/PDnet and SDCnet-peripheral counts separate. Luminaire wiring uses manufacturer Table A (1 V drop basis); validate actual current, gauge and route. No direct wired sensor-input capacity is confirmed. In a CIO-free Casambi architecture, retain actual power feeds and wireless associations rather than inventing a CIO/PDnet control string.
 
 ## 4. Regulatory Requirements and Certifications (Constraints)
 
@@ -72,7 +87,7 @@ Not established in the supplied sources.
 
 ## 8. Pitfalls, Assumptions, and Failure Modes
 
-Four lighting outputs do not establish four sensor inputs. Four outputs do not merge four room control zones. Total watts alone do not prove voltage/current compatibility or reduced-feed routing. **A shared nominal LED voltage does not qualify two different rated-mA CC luminaires for one parallel output.** See the manufacturer's Rev A2 wiring restriction in section 2A. Casambi limits and CIO/Casambi precedence remain open.
+Four lighting outputs do not establish four sensor inputs. Four outputs do not merge four room control zones. Total watts alone do not prove voltage/current compatibility or reduced-feed routing. **A shared nominal LED voltage does not qualify two different rated-mA CC luminaires for one parallel output.** See the manufacturer's Rev A2 wiring restriction in section 2A. Casambi is variant-specific; powered wireless sensors still need a supply. Casambi profile/device limits and mixed CIO/Casambi command precedence remain open, without making a CIO mandatory for an otherwise supported all-Casambi system.
 
 ## 9. Ecosystem and Related Devices
 
@@ -108,4 +123,4 @@ Do not infer signal precedence, reduced-input routing, failure state or emergenc
 
 ## 17. Status and Stewardship
 
-Draft; last reviewed 2026-10-06; steward KIS Solutions. Owner directives are design policy, separately identified from manufacturer evidence.
+Draft; last reviewed 2026-10-26; steward KIS Solutions. Existing manufacturer electrical evidence remains distinct from the dated owner clarification on wireless/hybrid architectures and the pending CIO firmware expansion. The linked manufacturer/Casambi pages corroborate radio variants and powered wireless sensor availability; they do not constitute a tested project integration or command-precedence result.
