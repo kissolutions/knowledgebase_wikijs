@@ -1,6 +1,6 @@
 {
   "catalog_id": "KIS-IECC-C405-SEQUENCE-VALIDATION",
-  "revision": "0.1.0",
+  "revision": "0.2.0",
   "status": "draft_research",
   "scope": "unamended model IECC commercial prescriptive lighting only; not ASHRAE alternate path",
   "sources": [
@@ -36,9 +36,7 @@
           "training",
           "copy_print",
           "breakroom",
-          "restroom",
-          "storage",
-          "locker_room"
+          "storage"
         ],
         "special_application": false
       },
@@ -68,7 +66,81 @@
       "source_urls": [
         "https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency"
       ],
-      "notes": "Standard-space occupant-sensor branch only; full-ON exceptions, emergency lighting and listed-space catchall require separate review."
+      "notes": "Standard listed-space branch. Restrooms/locker rooms use IECC21-OCC-FULL-AUTO-ON; the selected small fully enclosed categories use IECC21-OCC-SMALL-ENCLOSED. Other full-auto-on exceptions, specific applications, emergency provisions and local amendments require separate review."
+    },
+    {
+      "id": "IECC21-OCC-FULL-AUTO-ON",
+      "edition": "2021",
+      "section": "C405.2.1 and C405.2.1.1 exception",
+      "verification": "secondary_corroborated_needs_primary",
+      "applies": {
+        "space_types": [
+          "restroom",
+          "locker_room"
+        ],
+        "special_application": false
+      },
+      "requirements": [
+        {
+          "key": "occupancy_required",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "vacancy_timeout_minutes",
+          "op": "max",
+          "value": 20
+        }
+      ],
+      "source_urls": [
+        "https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency",
+        "https://iaeimagazine.org/wp-content/uploads/2022/10/2022-11-stevens-table2-link.pdf"
+      ],
+      "notes": "Restroom/locker-room exception candidate: full automatic-on without manual control is permitted; the vacancy shutoff limit remains. This is permission, not a mandate for full automatic-on or absence of switches. Secondary corroboration only; primary final unamended text verification remains pending. Other exception spaces are not added by this rule."
+    },
+    {
+      "id": "IECC21-OCC-SMALL-ENCLOSED",
+      "edition": "2021",
+      "section": "C405.2.1 item 12 and C405.2.1.1",
+      "verification": "secondary_corroborated_needs_primary",
+      "applies": {
+        "space_types": [
+          "electrical_mechanical",
+          "it_telecom",
+          "janitorial",
+          "other"
+        ],
+        "max_area_sq_ft": 300,
+        "enclosed_full_height": true,
+        "special_application": false
+      },
+      "requirements": [
+        {
+          "key": "occupancy_required",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "vacancy_timeout_minutes",
+          "op": "max",
+          "value": 20
+        },
+        {
+          "key": "max_auto_on_percent",
+          "op": "max",
+          "value": 50,
+          "allow_alternative": "manual_on"
+        },
+        {
+          "key": "manual_off_available",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "source_urls": [
+        "https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency"
+      ],
+      "notes": "Other listed-category candidates at or below 300 SF with confirmed floor-to-ceiling-height partitions. Area and enclosure are independent reviewed facts; a room name or closed markup polygon does not establish full-height construction. Secondary corroboration from the municipal checklist/university code guide cited in the proposal; final unamended primary text remains pending. This is not complete coverage of every normalized space type or exception."
     },
     {
       "id": "IECC21-OPEN-OFFICE",
@@ -494,5 +566,6 @@
       ],
       "notes": "For qualifying supplemental task (including permanently installed under-shelf/under-cabinet), display/accent/case, additional-power and lighting demonstration luminaires, independent manual control PLUS occupant-sensor or time-switch automatic shutoff. Do not treat manual-only as sufficient. Type is per-light group/endpoint, not inferred from Space type. Verify source, exceptions, adopted local amendments and whether luminaire is actually permanently installed; other C405.2.5 categories (sleeping units, plant-growth/food-warming, medical task) require separate rules."
     }
-  ]
+  ],
+  "minimum_process_revision": "0.2.0"
 }

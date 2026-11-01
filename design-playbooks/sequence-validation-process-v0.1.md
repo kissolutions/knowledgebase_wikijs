@@ -27,7 +27,9 @@ Each run produces an independent JSON work product: process version, rule catalo
 
 | Edition | First-pass rule family | Section |
 |---|---|---|
-| 2021 | General occupant sensor controls and <=20 min shutoff | C405.2.1/.1.1 |
+| 2021 | General listed-space occupant sensing and <=20 min shutoff; restrooms/locker rooms separated below | C405.2.1/.1.1 |
+| 2021 | IECC21-OCC-FULL-AUTO-ON: restroom/locker-room full automatic-on permission without required manual-off parameter; <=20 min vacancy shutoff retained | C405.2.1.1 exception; primary review pending |
+| 2021 | IECC21-OCC-SMALL-ENCLOSED: selected other categories <=300 SF inclusive, confirmed full-height enclosure; general sensing/on-off functions | C405.2.1 item 12/.1.1; primary review pending |
 | 2021 | Open office >=300 SF, independent zones <=600 SF, vacancy response <=20% | C405.2.1.3 |
 | 2021 | Corridor and warehouse occupancy reduction | C405.2.1.4/.1.2 |
 | 2021 | Conditional light-reduction methods; daylight response continuous to <=15% and OFF | C405.2.3/.3.1, C405.2.4/.4.1 |
@@ -35,8 +37,22 @@ Each run produces an independent JSON work product: process version, rule catalo
 | 2024 | Continuous dimming to <=10% power and OFF in listed spaces | C405.2.3/.3.1 |
 | 2024 | Daylight-response continuous dimming and OFF; numeric low-end not yet established | C405.2.4 |
 
-**Evidence distinction:** The 2021 rule entries have been reviewed against accessible [ICC model-code Chapter 4](https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency), corroborated by [DOE/PNNL analysis](https://www.energycodes.gov/sites/default/files/2022-09/2021_IECC_Commercial_Analysis_Final_2022_09_02.pdf). The unamended 2024 final ICC section could not be directly retrieved in this research pass. Draft 2024 rules are based on secondary corroboration from [Lutron](https://assets.lutron.com/a/documents/3672755_iecc_2024_application_summary.pdf), [Current/Cooper](https://cdn.currentlighting.com/image/upload/v1750699370/Site/applicationguide/NX_IECC_ApplicationGuide.pdf), and [Legrand/Wattstopper](https://mzltg.com/wp-content/uploads/2025/05/quick_guide-2024_IECC_v04.10.2025-FINAL.pdf). They remain *unqualified* until primary-text verification. A manufacturer example is not an adopted code rule.
+**Evidence distinction:** The original 2021 rule entries have been reviewed against accessible [ICC model-code Chapter 4](https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency), corroborated by [DOE/PNNL analysis](https://www.energycodes.gov/sites/default/files/2022-09/2021_IECC_Commercial_Analysis_Final_2022_09_02.pdf). The unamended 2024 final ICC section could not be directly retrieved in this research pass. Draft 2024 rules are based on secondary corroboration from [Lutron](https://assets.lutron.com/a/documents/3672755_iecc_2024_application_summary.pdf), [Current/Cooper](https://cdn.currentlighting.com/image/upload/v1750699370/Site/applicationguide/NX_IECC_ApplicationGuide.pdf), and [Legrand/Wattstopper](https://mzltg.com/wp-content/uploads/2025/05/quick_guide-2024_IECC_v04.10.2025-FINAL.pdf). They remain *unqualified* until primary-text verification. A manufacturer example is not an adopted code rule.
 
 **Known coverage gaps:** All editions require project-specific exceptions, local amendments, special-application, selected optional efficiency/LLLC alternatives, detailed daylight geometry/wattage applicability, emergency controls and commissioning checks. Some alternate 2021 light-reduction paths, 2024 high-end-trim manual-dimmer exceptions, and the full 2024 listed-space and occupancy rules require additional rule records. A matching subset of rules does not establish comprehensive code compliance. Reconcile with the existing [IECC Occupant Sensor Directives](iecc-occupant-sensor-directives.md).
 
 The sequence catalog remains unchanged. A future revision of this process or its rule data does not mandate a canonical model schema change. It merely produces a new validation work product.
+
+## Catalog 0.2.0 occupant-sensor coverage update (2026-11-01)
+
+The stable catalog filename remains `iecc-lighting-sequence-validation-v0.1.json`; its internal revision is **0.2.0**. Use LV evaluator/process **0.2.0 or later**, which supports inclusive `max_area_sq_ft` and boolean `enclosed_full_height`. Update the LV engine before selecting this catalog; older engines ignore the new applicability keys and must not be paired with it. Pin both repository revisions in each validation basis.
+
+`IECC21-OCC-GENERAL` no longer applies its <=50% auto-on/manual-on and manual-off requirements to restrooms/locker rooms. `IECC21-OCC-FULL-AUTO-ON` is the separate exception candidate: it retains occupancy and <=20-minute vacancy shutoff requirements, while not requiring manual-off or restricting auto-on percentage. It does not require removal of a manual control or force every applicable room to use full auto-on.
+
+`IECC21-OCC-SMALL-ENCLOSED` covers the selected normalized categories `electrical_mechanical`, `it_telecom`, `janitorial`, and `other` at **<=300 SF**, with reviewed floor-to-ceiling-height partitions. Unknown/invalid area or enclosure stays unresolved; a known failed prerequisite skips that rule. Neither a closed room polygon nor a door alone proves full-height partitions. Existing classification, applicability and specific-application screening remain independent.
+
+Both new rules retain **secondary_corroborated_needs_primary** and therefore produce `needs_review` even when their functional requirements are met. The proposal cites an IECC summary, the IAEI 2022 table, ICC committee material, a municipal 2021 checklist and a university guide. An indexed ICC excerpt supports the reported wording, but direct retrieval of the final ICC page returned HTTP 403 during integration; this is not recorded as completed primary-text review. Existing original-rule evidence statuses are not retroactively changed. Record primary verification separately before promoting the new rule status.
+
+2024 rules, corridor reduction and the open-office 600-SF checks are unchanged. Full-auto-on handling for other exception categories, a 2024 counterpart, local amendments and complete catch-all taxonomy remain review work. This update does not turn a project commissioning flag or owner exception into code compliance, mutate accepted SEQ/PSEQ parameters, or certify an endpoint from a partial catalog.
+
+Implementation basis: LV evaluator commit [967026e](https://github.com/kissolutions/lv-lighting-design/commit/967026eeb8a5ff90112876eea4d0d2f4af26f804). This version passed 346 synthetic regression tests, five model checks and 24 actual-catalog synthetic integration cases before publication; those results are not a private-project rerun or primary-code certification.
