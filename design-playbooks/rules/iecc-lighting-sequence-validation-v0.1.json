@@ -1,6 +1,6 @@
 {
   "catalog_id": "KIS-IECC-C405-SEQUENCE-VALIDATION",
-  "revision": "0.2.0",
+  "revision": "0.2.1",
   "status": "draft_research",
   "scope": "unamended model IECC commercial prescriptive lighting only; not ASHRAE alternate path",
   "sources": [
@@ -94,7 +94,8 @@
       ],
       "source_urls": [
         "https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency",
-        "https://iaeimagazine.org/wp-content/uploads/2022/10/2022-11-stevens-table2-link.pdf"
+        "https://iaeimagazine.org/wp-content/uploads/2022/10/2022-11-stevens-table2-link.pdf",
+        "https://thelightingagency.com/?p=4963"
       ],
       "notes": "Restroom/locker-room exception candidate: full automatic-on without manual control is permitted; the vacancy shutoff limit remains. This is permission, not a mandate for full automatic-on or absence of switches. Secondary corroboration only; primary final unamended text verification remains pending. Other exception spaces are not added by this rule."
     },
@@ -138,7 +139,9 @@
         }
       ],
       "source_urls": [
-        "https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency"
+        "https://codes.iccsafe.org/content/IECC2021V3.0/chapter-4-ce-commercial-energy-efficiency",
+        "https://ww2.scottsdaleaz.gov/Assets/ScottsdaleAZ/Design/green-building/2021+IECC+Interior+Lighting+Controls+Checklist.pdf",
+        "https://smartenergy.illinois.edu/wp-content/uploads/2023/02/2021-IECC-Top-10_Commercial-Lighting_2.22.2023.pdf"
       ],
       "notes": "Other listed-category candidates at or below 300 SF with confirmed floor-to-ceiling-height partitions. Area and enclosure are independent reviewed facts; a room name or closed markup polygon does not establish full-height construction. Secondary corroboration from the municipal checklist/university code guide cited in the proposal; final unamended primary text remains pending. This is not complete coverage of every normalized space type or exception."
     },

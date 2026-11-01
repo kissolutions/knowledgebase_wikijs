@@ -45,7 +45,7 @@ The sequence catalog remains unchanged. A future revision of this process or its
 
 ## Catalog 0.2.0 occupant-sensor coverage update (2026-11-01)
 
-The stable catalog filename remains `iecc-lighting-sequence-validation-v0.1.json`; its internal revision is **0.2.0**. Use LV evaluator/process **0.2.0 or later**, which supports inclusive `max_area_sq_ft` and boolean `enclosed_full_height`. Update the LV engine before selecting this catalog; older engines ignore the new applicability keys and must not be paired with it. Pin both repository revisions in each validation basis.
+The stable catalog filename remains `iecc-lighting-sequence-validation-v0.1.json`; its current internal revision is **0.2.1** (OCC behavior introduced in 0.2.0). Use LV evaluator/process **0.2.0 or later**, which supports inclusive `max_area_sq_ft` and boolean `enclosed_full_height`. Update the LV engine before selecting this catalog; older engines ignore the new applicability keys and must not be paired with it. Pin both repository revisions in each validation basis.
 
 `IECC21-OCC-GENERAL` no longer applies its <=50% auto-on/manual-on and manual-off requirements to restrooms/locker rooms. `IECC21-OCC-FULL-AUTO-ON` is the separate exception candidate: it retains occupancy and <=20-minute vacancy shutoff requirements, while not requiring manual-off or restricting auto-on percentage. It does not require removal of a manual control or force every applicable room to use full auto-on.
 
@@ -56,3 +56,9 @@ Both new rules retain **secondary_corroborated_needs_primary** and therefore pro
 2024 rules, corridor reduction and the open-office 600-SF checks are unchanged. Full-auto-on handling for other exception categories, a 2024 counterpart, local amendments and complete catch-all taxonomy remain review work. This update does not turn a project commissioning flag or owner exception into code compliance, mutate accepted SEQ/PSEQ parameters, or certify an endpoint from a partial catalog.
 
 Implementation basis: LV evaluator commit [967026e](https://github.com/kissolutions/lv-lighting-design/commit/967026eeb8a5ff90112876eea4d0d2f4af26f804). This version passed 346 synthetic regression tests, five model checks and 24 actual-catalog synthetic integration cases before publication; those results are not a private-project rerun or primary-code certification.
+
+## Catalog 0.2.1 source-reference reconciliation (2026-11-01)
+
+The subsequently supplied original OCC patches were compared with current main. All applicability conditions, requirements and verification states already match the implemented OCC rules; all four regression cases supplied with the LV patch pass against the current evaluator. Preserve the newer engine safeguards and documentation rather than reapplying an older patch wholesale.
+
+This catalog patch revision adds three previously omitted secondary-source URLs from the supplied patch: the lighting-agency summary on the full-auto-on rule, and the municipal checklist/university guide on the small-enclosed rule. Their inclusion records the proposal's provenance; it is not newly completed primary-text verification. Both new rules remain `secondary_corroborated_needs_primary`. Requirements, applicability, minimum engine revision and every 2024 rule are unchanged.
