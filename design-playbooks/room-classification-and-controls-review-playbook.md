@@ -71,6 +71,23 @@ Do not stop the classification attempt because the architectural label has no ex
 
 The review output includes Space ID, exact source room label/use, proposed building-code space type and occupancy group, proposed energy-code type (or unresolved), verified area/enclosure where needed, occupancy/time-switch candidate and any combined functions, rule/source locator, documented-versus-inferred basis, and review status. This is a documentation/review directive; it does not claim new schema fields or an implemented automatic matcher.
 
+### Step 1B — Auxiliary Spaces: Required First-Pass M3 Questions
+
+**Owner direction, 2026-11-01:** On the **first pass through M3**, identify and explicitly question **all auxiliary/support Spaces**, including electrical and mechanical rooms. Include other auxiliary uses found in the actual inventory (for example IT/telecom, plant/equipment, janitorial, storage and service rooms); these examples are not a closed taxonomy. Run this screen before selecting a default sequence, even when a room has a familiar name or passes an area/enclosure rule.
+
+For each identified Space, ask the owner/responsible project reviewer to confirm:
+
+- What work and maintenance occur there, who uses it, and whether personnel can remain still, obscured from a sensor or behind equipment.
+- Whether loss of lighting during that work could expose personnel to moving equipment, exposed energized parts or another safety/security hazard.
+- Whether any lighting must operate continuously or has a separate emergency/security function, with the affected lighting identified.
+- Whether occupant-sensor shutoff, time-switch shutoff and manual control are appropriate for the actual use, and what source intent or proposed exception needs review.
+
+Raise the questions explicitly in the first M3 review; do not wait for a validator conflict or treat an unanswered question as confirmation. Reuse traceable answers already covering the current use/revision, and consolidate equivalent questions where practical while listing every affected Space ID.
+
+Record the questions, answers or pending status, actual-use evidence, proposed control path and any applicable code/exception basis in existing project review/open-item records. **An electrical/mechanical label is neither an automatic exemption nor sufficient evidence to prescribe automatic shutoff.** Distinguish permission for full automatic-on, permission to omit manual control and an exception from automatic shutoff. Any exception must be supported by the adopted edition, applicable section and reviewed facts; do not extend a time-switch exception into a blanket occupant-sensor exemption.
+
+Unresolved answers that could change safe operation or required control behavior keep the affected M3 sequence/control direction provisional and carry into dependent fixture-selection review. Continue unaffected work. This is a required human/agent first-pass inquiry, not a new schema field, automatic hazard classifier or additional approval form.
+
 ### Area Precision for Threshold Decisions
 
 Use first-pass room/zone area estimates to screen the thresholds explicitly present in the applicable code provision. Detailed area takeoff is not required for every room. If the estimate is near a threshold such that plausible uncertainty could change the result, perform a second, more accurate measurement before finalizing the affected control decision. If uncertainty cannot be bounded, obtain better measurement evidence rather than assuming the room falls on the convenient side.

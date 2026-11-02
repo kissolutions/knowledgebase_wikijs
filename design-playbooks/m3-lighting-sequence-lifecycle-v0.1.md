@@ -26,6 +26,10 @@ This lifecycle instantiates the shared KIS phase/process/milestone distinctions.
 
 **Work product:** M3 Source Readiness Record (source ID/revision, `lighting_plan_available`, `source_control_intent_status`, observed symbols/circuit/group evidence, separately missing inputs, owner request and affected-Space/Light Point IDs). It is a review process contract; no unsupported project schema properties are implied.
 
+## First-pass auxiliary-space inquiry
+
+During Pass A classification/requirements, **identify and explicitly question all auxiliary/support Spaces**, including electrical and mechanical rooms, before default SEQ matching. Ask about actual use/maintenance, hazards from loss of lighting, sensing limitations, continuous/emergency/security lighting and the appropriateness of automatic shutoff/manual control. Follow [the required first-pass questions and evidence record](room-classification-and-controls-review-playbook.md#step-1b--auxiliary-spaces-required-first-pass-m3-questions). Do not infer either an exemption or a safe automatic-OFF sequence from the room name; pending consequential answers keep affected direction provisional. Include this inquiry in the initial M3 owner review even if the rule engine raises no conflict; continue unaffected work.
+
 ## Flow
 
 ```mermaid

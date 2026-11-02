@@ -1,6 +1,6 @@
 {
   "catalog_id": "KIS-IECC-C405-SEQUENCE-VALIDATION",
-  "revision": "0.2.1",
+  "revision": "0.2.2",
   "status": "draft_research",
   "scope": "unamended model IECC commercial prescriptive lighting only; not ASHRAE alternate path",
   "sources": [
@@ -72,7 +72,7 @@
       "id": "IECC21-OCC-FULL-AUTO-ON",
       "edition": "2021",
       "section": "C405.2.1 and C405.2.1.1 exception",
-      "verification": "secondary_corroborated_needs_primary",
+      "verification": "primary_text_reviewed",
       "applies": {
         "space_types": [
           "restroom",
@@ -97,7 +97,7 @@
         "https://iaeimagazine.org/wp-content/uploads/2022/10/2022-11-stevens-table2-link.pdf",
         "https://thelightingagency.com/?p=4963"
       ],
-      "notes": "Restroom/locker-room exception candidate: full automatic-on without manual control is permitted; the vacancy shutoff limit remains. This is permission, not a mandate for full automatic-on or absence of switches. Secondary corroboration only; primary final unamended text verification remains pending. Other exception spaces are not added by this rule."
+      "notes": "Restroom/locker-room branch: C405.2.1.1 permits full automatic-on without a manual control; the <=20-minute vacancy shutoff requirement remains. This is permission, not a mandate for full automatic-on or removal of switches. Primary section text reviewed against the owner-supplied ICC code excerpt received 2026-11-01, consistent with the linked IECC 2021 source. Scope is the quoted control-function exception; C405.2.1 applicability, local adoption/amendments and other project exceptions remain independently reviewed. Other exception spaces are not added by this rule."
     },
     {
       "id": "IECC21-OCC-SMALL-ENCLOSED",
