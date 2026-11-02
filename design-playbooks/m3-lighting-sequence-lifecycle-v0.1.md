@@ -30,6 +30,10 @@ This lifecycle instantiates the shared KIS phase/process/milestone distinctions.
 
 During Pass A classification/requirements, **identify and explicitly question all auxiliary/support Spaces**, including electrical and mechanical rooms, before default SEQ matching. Ask about actual use/maintenance, hazards from loss of lighting, sensing limitations, continuous/emergency/security lighting and the appropriateness of automatic shutoff/manual control. Follow [the required first-pass questions and evidence record](room-classification-and-controls-review-playbook.md#step-1b--auxiliary-spaces-required-first-pass-m3-questions). Do not infer either an exemption or a safe automatic-OFF sequence from the room name; pending consequential answers keep affected direction provisional. Include this inquiry in the initial M3 owner review even if the rule engine raises no conflict; continue unaffected work.
 
+## First-pass daylight qualification and fixture handoff
+
+During the initial requirements/source review, identify relevant glazing, roof openings, overhangs and external obstructions and raise consequential missing-input questions. For the 2021 IECC path use [the daylight qualification procedure](iecc-2021-daylight-zone-review-v0.1.md): review each contribution, establish qualified extents, then evaluate lighting power and applicable exceptions. Record zone / not a zone / unresolved separately from daylight controls required / not required / unresolved. Preserve owner assertions as asserted, not measured. A daylight exclusion does not remove other code/source/owner dimming requirements. Carry the resulting fixture-group requirements into the post-M3 distributor request; reopen affected assignments and schedules when evidence changes. These are supervised review steps, not new canonical fields or automated geometry checks.
+
 ## Flow
 
 ```mermaid

@@ -66,7 +66,7 @@ The tokens below are retrieval aliases, not automatic classifications from sourc
 | IDF / communications, wellness | [Room functions](../ontology/reg-and-class/interior-space-types.md#other-room-functions) | Dedicated control playbooks pending | Guidance incomplete; do not invent an exception |
 | Reception, lobby, hospitality | [Room functions](../ontology/reg-and-class/interior-space-types.md#other-room-functions) | Dedicated control playbooks pending | Guidance incomplete; actual use/boundaries require review |
 | Classroom | [Room functions](../ontology/reg-and-class/interior-space-types.md#other-room-functions) | Dedicated control playbook pending | Guidance incomplete; manual review |
-| Primary/secondary daylight zones | [Daylight vocabulary](../ontology/reg-and-class/interior-space-types.md#daylight-vocabulary) | Edition-specific geometry/control guide pending | Record geometry and applicability separately; manual review |
+| Primary/secondary daylight zones | [Daylight vocabulary](../ontology/reg-and-class/interior-space-types.md#daylight-vocabulary) | [IECC 2021 qualification and M3 review](iecc-2021-daylight-zone-review-v0.1.md) | 2021 source-grounded supervised procedure; geometry, power and exceptions need project evidence. Other editions/calculators remain separate work |
 
 Supporting hardware/function pages: [occupancy sensors](../ontology/signal-and-control-dev/occupancy-sensors.md), [lighting powerpack](../ontology/signal-and-control-dev/lighting-powerpack.md), [automatic receptacle control](../ontology/functional-constructs/automatic-receptacle-control.md). Hardware fundamentals do not prescribe the room's sequence or establish code applicability.
 

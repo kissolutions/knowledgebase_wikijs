@@ -136,6 +136,8 @@ This scope limit does not cancel the targeted area-threshold screening/second pa
 
 ## Daylight Zones — Directive, Flagged for Expansion
 
+**2021 expansion, 2026-11-01:** Follow [IECC 2021 Daylight Zone Qualification and M3 Review](iecc-2021-daylight-zone-review-v0.1.md) for opening qualification, overhang/obstruction checks, corrected extents, power thresholds and exception evidence. Record **zone qualification** separately from **controls required** and from **remaining fixture dimming requirements**. A known failure rejects only the affected opening's contribution; review other wall/roof openings before assigning a Space-level negative determination. The legacy heading remains for existing links; other editions still require separate expansion.
+
 Every Space receives an explicit daylight-zone determination: **zone**, **not a zone**, or **unresolved**. State absence explicitly; never interpret a blank or null as “no.” Record the project code edition and determination basis for each Space, including negative determinations.
 
 **Owner assertion versus measured geometry.** An owner-asserted zone extent is sufficient to carry an M3 control decision. Record it as an owner assertion, with the owner decision reference; keep missing sidelit/toplit geometric evidence as a separate open question. An asserted zone is not a measured zone. Without source evidence or an owner assertion, retain unresolved rather than inventing either geometry or an assertion.
@@ -144,7 +146,7 @@ Every Space receives an explicit daylight-zone determination: **zone**, **not a 
 
 **Edition sensitivity.** Daylight provisions are edition-dependent: thresholds, zone definitions, lighting-power trade-offs and exceptions must be reviewed for the selected edition. Never carry a daylight conclusion across editions. When the project edition changes, reopen and re-run all daylight determinations and dependent control conclusions, preserving prior decisions as history.
 
-**Geometry evidence.** Geometric establishment requires glazing evidence sufficient to determine the relevant extents and heights: elevations, window/storefront schedules or a calibrated plan with glazing extent and head-height information, as applicable. Where the source set lacks this evidence, state the gap; retain an existing owner assertion as asserted and do not invent geometry. This section is flagged for expansion into edition-specific geometry and verification guidance, not an automatic geometric evaluator.
+**Geometry evidence.** Geometric establishment requires glazing evidence sufficient to determine the relevant extents and heights: elevations, window/storefront schedules or a calibrated plan with glazing extent and head-height information, as applicable. Where the source set lacks this evidence, state the gap; retain an existing owner assertion as asserted and do not invent geometry. The linked 2021 procedure supplies the edition-specific qualification and verification steps. Its geometry and exception determinations remain supervised review work, not an automatic geometric evaluator. Unknowns that could change required fixture/driver behavior must remain explicit in the M3/distributor handoff.
 
 ## Narrative-versus-Fixture Cross-Reference — Standing M3 Check
 
