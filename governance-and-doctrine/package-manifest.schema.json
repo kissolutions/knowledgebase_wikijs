@@ -159,6 +159,19 @@
     },
     "files": {
       "type": "array",
+      "contains": {
+        "type": "object",
+        "required": ["path", "role"],
+        "properties": {
+          "path": {
+            "const": "project-status-log.md"
+          },
+          "role": {
+            "const": "documentation"
+          }
+        }
+      },
+      "minContains": 1,
       "items": {
         "type": "object",
         "additionalProperties": false,
