@@ -2,7 +2,7 @@
 title: AI Agent Framework Guide
 description: Vendor- and domain-neutral instructions for how an AI agent should use this knowledge framework
 published: true
-date: 2026-09-26T00:00:00.000Z
+date: 2026-11-22T00:00:00.000Z
 tags: ai, governance, framework
 editor: markdown
 dateCreated: 2026-09-26T00:00:00.000Z
@@ -64,3 +64,7 @@ For drawing-derived spatial work, follow [Drawing-Based Spatial Extraction and V
 ## 7. Public-repository data boundary
 
 **This WikiJS source repository and publicly accessible domain extension repositories are reusable engineering knowledge, not project archives.** Never commit client names or client-identifying facilities, IP/MAC addresses, serial numbers, network diagrams, project drawings, contracts, pricing, credentials, private Drive/SharePoint links, photographs or verbatim client communications. Store real project records in its approved private project location. Publish only independently verified generic manufacturer facts, sanitized/anonymized examples and broadly applicable processes. Before committing a workbook or code-generated attachment, run the domain's blank-template or sensitive-data check; examine hidden sheets, cell notes, document metadata, comments and formulas as well as visible cells. If exposure is discovered, stop reuse and remediate both current files and historical public reachability; removing data only from the latest file does not erase repository history.
+
+## 8. Required project status log
+
+Every framework project maintains one `project-status-log.md` in approved project storage, listed alongside its other working files and included in full in every project archive package. It is independent of any PER or domain/plugin document; no dedicated link field is required. Follow the [Project Status Log Standard](../governance-and-doctrine/project-status-log-standard.md) and [blank template](../templates/project-status-log/README.md). On resume, read its Current state and relevant history and confirm listed file versions. After every session that changes a deliverable, update Current state and append a dated entry identifying changed filenames/versions, related record IDs where applicable and decision authority. Keep history oldest first, preserve earlier entries, back-fill identified earlier evidence when adopting mid-project, and use handoff/status snapshots as inputs or dated extracts. Existing engineering records and their edit histories retain their authority. Before archiving, reconcile the log with the packaged files and retain open items explicitly.

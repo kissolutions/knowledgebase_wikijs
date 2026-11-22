@@ -321,6 +321,10 @@ These pages govern the structure and evolution of the knowledgebase itself.
 
 
 
+## Required Project Status Log
+
+Every project using this framework maintains a continuous [Project Status Log](governance-and-doctrine/project-status-log-standard.md), listed with its working files and included in its archive packages. Start from the [blank template and instructions](templates/project-status-log/README.md).
+
 ## Lighting Review Entry Point
 
 Use the [Lighting Controls Guidance Index](design-playbooks/lighting-controls-guidance-index.md) to find space definitions, existing playbooks, required review inputs and guidance gaps. It separates vocabulary, selected code requirements, KIS defaults and project-specific source intent.
