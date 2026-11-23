@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KIS Project Archive Manifest",
+  "description": "Versioned file inventory for a portable KIS project archive.",
+  "type": "object",
+  "required": [
+    "manifest_schema_version",
+    "package_id",
+    "package_revision",
+    "status",
+    "created_utc",
+    "files"
+  ],
+  "properties": {
+    "manifest_schema_version": {
+      "const": "1.0.0"
+    },
+    "package_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "package_revision": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "status": {
+      "enum": ["working", "review", "issued", "superseded"]
+    },
+    "created_utc": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?(Z|[+]00:00)(?![\\s\\S])"
+    },
+    "files": {
+      "description": "List exactly one 'project-status-log.md' with role 'documentation'.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "role", "sha256"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "enum": [
+              "canonical",
+              "working",
+              "accepted_baseline",
+              "source",
+              "artifact",
+              "receipt",
+              "validation",
+              "documentation"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "minLength": 64,
+            "maxLength": 64,
+            "pattern": "^[0-9a-f]+$"
+          }
+        }
+      },
+      "contains": {
+        "type": "object",
+        "required": ["path", "role"],
+        "properties": {
+          "path": {
+            "const": "project-status-log.md"
+          },
+          "role": {
+            "const": "documentation"
+          }
+        }
+      },
+      "minContains": 1,
+      "maxContains": 1
+    }
+  }
+}
