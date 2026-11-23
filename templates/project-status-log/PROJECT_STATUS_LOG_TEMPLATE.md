@@ -16,6 +16,8 @@
 
 **History coverage:** {{first event through latest event; adoption/back-fill gaps}}
 
+**Next action on resume:** {{what to open and do next, with any blocker or decision needed}}
+
 ### Deliverables in use
 
 <!-- Add every applicable current deliverable. Use exact filenames and revisions.

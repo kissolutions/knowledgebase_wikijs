@@ -22,7 +22,7 @@ Maintain a concise **Current state** block at the top and overwrite it as the pr
 - Every current deliverable's filename, revision/version and project-relative location. Distinguish the latest working revision from the latest issued or accepted revision when they differ. Mark unknown or not-yet-created items explicitly.
 - A short architecture or approach summary appropriate to the project.
 - Standing project rules, owner directives and protected decisions, with their source references.
-- Open items, next actions and responsible parties, citing existing register IDs when available.
+- Open items, next actions and responsible parties, citing existing register IDs when available. Identify where to pick up next and what, if anything, blocks that action.
 
 Deliverables may include an equipment/device/points workbook, engineering register, BOM, basis of design, drawings, calculations or other domain outputs. No particular domain deliverable or register is a prerequisite for maintaining the log. Use `not applicable` where a section does not apply; do not invent architecture or records to fill the template.
 
@@ -30,9 +30,11 @@ Deliverables may include an equipment/device/points workbook, engineering regist
 
 Below Current state, maintain an **append-only dated log**, oldest entry first and newest last. During active work, add an entry for each working day or material decision. Every session that changes a deliverable must update Current state and append an entry before handoff; multiple sessions on one day may have separate entries. Every deliverable revision must be accounted for.
 
+Save these updates in the working project file as significant revisions or decisions are made. Before pausing or handing off, make sure the saved log reflects the latest completed work and the next action. Someone resuming in a new or compressed conversation should be able to identify what to open and where to start from the saved log.
+
 Each entry identifies its recording date (and timezone if a time is used), the event date if different, what changed and why, affected filenames and versions, related record IDs or source locators, and who made any decision. Distinguish the author recording an event from the person authorized to decide; agent-generated work is not human approval. State unknown attribution explicitly. Record material decisions and open-item dispositions even when no file is uprevved.
 
-Preserve earlier entries. Correct mistakes through a new dated correction referring to the earlier entry. On resuming a project, read Current state and relevant history, then confirm the listed source files and revisions before relying on the summary. A discrepancy must be reconciled and recorded rather than silently resolved in favor of the log.
+Preserve earlier entries. Correct mistakes through a new dated correction referring to the earlier entry. On resuming a project, read Current state and relevant history before making changes. Confirm that the source files and revisions needed for the work agree with the log. Reconcile and record any discrepancies using the authoritative project records.
 
 ## 3. Authority and adoption during a project
 
