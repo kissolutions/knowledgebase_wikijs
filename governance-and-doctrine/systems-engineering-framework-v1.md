@@ -99,6 +99,10 @@ These are deliberately lightweight, distinct operations:
 
 **Future implementation candidate (not mandatory): Markup/CAD-based acceptance.** Investigate direct acceptance via editable drawing markups or CAD object metadata. LV Lighting cable-route segment/named-route acceptance is the reference case; Bluebeam-specific conventions, annotation IDs and optimizer enforcement belong to the LV routing process until generalized.
 
+### Required Project Status Log (P17)
+
+Every project using this framework maintains one **Project Status Log**, independent of domain plugins or registers. Keep `project-status-log.md` in the project's working file set and inventory throughout the project, with an editable Current state block and an append-only dated history. Update both after every session changing a deliverable; cite existing records without replacing their authority. Include the complete log in every project archive package and its inventory, reconciled to packaged deliverable versions. No PER field or link from another domain document is required. The [Project Status Log Standard](project-status-log-standard.md) defines maintenance, mid-project back-fill and archive completeness; the [template](../templates/project-status-log/README.md) is generic and contains no client data.
+
 ## 6. Data contracts and presentation contracts
 
 - **Data Contract:** Meaning, type, valid values, null/unknown behavior, identity, reference constraints, validation and downstream use for a canonical field.
